@@ -1,0 +1,74 @@
+$bg-color: #1d1d21;
+$gutter: 1.5em;
+$brand-color: #eaa075;
+$font-head: 2em;
+$font-body:1em;
+
+
+.main {
+  background-color: $bg-color;
+  padding: none;
+  //home-landing
+  &__home-landing {
+    height: 200px;
+    padding: none;
+    &__logo {
+      padding-top:$gutter;
+      display: block;
+      margin: 0 auto;
+    }
+    .my-navbar-wrapper {
+      border-radius: none !important;
+      width: 100%;
+      margin: 0 !important;
+      left: 0;
+      text-align: center;
+      position: relative;
+      min-height: 50px;
+      border: none;
+      background-color: $bg-color !important;
+      border-color: none;
+      &__nav {
+        list-style-type: none;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+        width: 100%;
+        float: none;
+        &--list {
+          display: inline-block !important;
+          padding: $gutter/2;
+          color: $brand-color;
+          font-size: $font-head/1.5;
+          float: none !important;
+          position: relative;
+        }
+      }
+    }
+
+  }//end of home-landing
+}//end of main
+
+
+
+
+//bootstrap
+.my-navbar-wrapper.affix {
+    top:0;
+    width: 100%;
+    position: fixed !important;
+    z-index: 1000;
+}
+
+.my-navbar-wrapper.affix-top {
+    top: 0;
+    width: 100%;
+}
+
+.my-navbar-wrapper.affix + .container-fluid {
+    padding-top: 70px;
+}
+
+.navbar {
+  border-radius: 0 !important;
+}

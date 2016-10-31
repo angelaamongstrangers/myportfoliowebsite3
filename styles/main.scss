@@ -67,7 +67,7 @@ html, body {
       background-color: #fff;
       position: absolute;
       padding: 10px;
-      height: 650px;
+      height: 600px;
       width: 50%;
       float: left;
     }
@@ -118,7 +118,7 @@ html, body {
       background-color: $brand-color;
       position: absolute;
       padding: 10px;
-      height: 650px;
+      height: 600px;
       width: 50%;
       float: left;
     }
@@ -141,7 +141,7 @@ html, body {
       background-color: #fff;
       position: absolute;
       padding: 10px;
-      height: 650px;
+      height: 600px;
       width: 50%;
       float: left;
     }
@@ -199,6 +199,12 @@ html, body {
     transition: .2s ease;
   }
 }
+.transition-width {
+   transition: all 2s ease-out;
+}
+
+
+
 
 //bootstrap
 .my-navbar-wrapper.affix {

@@ -58,7 +58,7 @@ html, body {
   background-color: #fff;
   position: absolute;
   padding: 10px;
-  height: 650px;
+  height: 600px;
   width: 50%;
   float: left;
 }
@@ -103,7 +103,7 @@ html, body {
   background-color: #eaa075;
   position: absolute;
   padding: 10px;
-  height: 650px;
+  height: 600px;
   width: 50%;
   float: left;
 }
@@ -123,7 +123,7 @@ html, body {
   background-color: #fff;
   position: absolute;
   padding: 10px;
-  height: 650px;
+  height: 600px;
   width: 50%;
   float: left;
 }
@@ -175,6 +175,10 @@ html, body {
 .work-section-content a:hover {
   opacity: 1;
   transition: .2s ease;
+}
+
+.transition-width {
+  transition: all 2s ease-out;
 }
 
 .my-navbar-wrapper.affix {

@@ -1,0 +1,61 @@
+.main {
+  background-color: #1d1d21;
+  padding: none;
+}
+.main__home-landing {
+  height: 200px;
+  padding: none;
+}
+.main__home-landing__logo {
+  padding-top: 1.5em;
+  display: block;
+  margin: 0 auto;
+}
+.main__home-landing .my-navbar-wrapper {
+  border-radius: none !important;
+  width: 100%;
+  margin: 0 !important;
+  left: 0;
+  text-align: center;
+  position: relative;
+  min-height: 50px;
+  border: none;
+  background-color: #1d1d21 !important;
+  border-color: none;
+}
+.main__home-landing .my-navbar-wrapper__nav {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  float: none;
+}
+.main__home-landing .my-navbar-wrapper__nav--list {
+  display: inline-block !important;
+  padding: 0.75em;
+  color: #eaa075;
+  font-size: 1.33333em;
+  float: none !important;
+  position: relative;
+}
+
+.my-navbar-wrapper.affix {
+  top: 0;
+  width: 100%;
+  position: fixed !important;
+  z-index: 1000;
+}
+
+.my-navbar-wrapper.affix-top {
+  top: 0;
+  width: 100%;
+}
+
+.my-navbar-wrapper.affix + .container-fluid {
+  padding-top: 70px;
+}
+
+.navbar {
+  border-radius: 0 !important;
+}
