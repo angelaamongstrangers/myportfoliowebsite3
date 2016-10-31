@@ -153,7 +153,6 @@ html, body {
 
 .section-title {
   text-align: center;
-  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -161,6 +160,21 @@ html, body {
 }
 .section-title span {
   font-size: 2em;
+}
+
+.work-item-link {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-decoration: none;
+  opacity: 0;
+}
+
+.work-section-content a:hover {
+  opacity: 1;
+  transition: .2s ease;
 }
 
 .my-navbar-wrapper.affix {
