@@ -71,7 +71,7 @@ $font-body:1em;
 }
 //end of filters
 
-//portfolio
+//portfolio-mixitup
 .portfolio-container {
   padding: 2% 2% 0;
   -webkit-backface-visibility: hidden;
@@ -116,60 +116,76 @@ $font-body:1em;
     width: 22.5%;
   }
 }
-  .project-box {
-    margin: 10px;
-    .box-caption {
-    margin-bottom: 20px;
-    height: 100px;
-    text-align: center;
-    padding: 10px;
-    }
-    .project-image1 {
-      display: block;
-      background: url(../images/test.jpg) no-repeat center top;
-      height: 300px;
-      overflow: hidden;
-      background-size: Auto 300px;
-    }
-    .project-image2 {
-      display: block;
-      background: url(../images/test2.jpg) no-repeat center top;
-      height: 300px;
-      overflow: hidden;
-      background-size: Auto 300px;
-    }
-    .project-image3 {
-      display: block;
-      background: url(../images/test3.jpg) no-repeat center top;
-      height: 300px;
-      overflow: hidden;
-      background-size: Auto 300px;
-    }
-  }
+//end of portfolio-mixitup
 
-  //global
-  .clear {
-    clear: both;
-    float: none;
+//individual image
+.project-box {
+  margin: 10px;
+
+  // .box-caption {
+  // margin-bottom: 20px;
+  // height: 100px;
+  // text-align: center;
+  // padding: 10px;
+  // }
+  .project-image1 {
+    display: block;
+    background: url(../images/test.jpg) no-repeat center top;
+    height: 300px;
+    overflow: hidden;
+    background-size: Auto 300px;
   }
-  .see-project{
-    text-align: center;
+  .project-image2 {
+    display: block;
+    background: url(../images/test2.jpg) no-repeat center top;
+    height: 300px;
+    overflow: hidden;
+    background-size: Auto 300px;
+  }
+  .project-image3 {
+    display: block;
+    background: url(../images/test3.jpg) no-repeat center top;
+    height: 300px;
+    overflow: hidden;
+    background-size: Auto 300px;
+  }
+}
+
+//global
+.clear {
+  clear: both;
+  float: none;
+}
+.see-project{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-decoration: none;
+  opacity: 0;
+  position: relative;
+  .color-box {
+    background-color: lightgrey;
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    text-decoration: none;
-    opacity: 0;
-    }
-  .project-box{
-    a:hover {
-      opacity: 1;
-      transition: .2s ease;
-    }
+    opacity: 0.5;
+    position: absolute;
   }
-  .hidden {
-    display: none;
+  .text-box {
+    position: absolute;
+    padding: 25px;
+    background-color: #fff;
   }
+}
+
+.see-project:hover {
+  opacity: 1;
+  transition: .3s ease;
+}
 
 
 //bootstrap

@@ -103,12 +103,6 @@
 .project-box {
   margin: 10px;
 }
-.project-box .box-caption {
-  margin-bottom: 20px;
-  height: 100px;
-  text-align: center;
-  padding: 10px;
-}
 .project-box .project-image1 {
   display: block;
   background: url(../images/test.jpg) no-repeat center top;
@@ -144,15 +138,27 @@
   height: 100%;
   text-decoration: none;
   opacity: 0;
+  position: relative;
+}
+.see-project .color-box {
+  background-color: lightgrey;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+  position: absolute;
+}
+.see-project .text-box {
+  position: absolute;
+  padding: 25px;
+  background-color: #fff;
 }
 
-.project-box a:hover {
+.see-project:hover {
   opacity: 1;
-  transition: .2s ease;
-}
-
-.hidden {
-  display: none;
+  transition: .3s ease;
 }
 
 .my-navbar-wrapper.affix {
