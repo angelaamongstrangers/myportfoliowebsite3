@@ -40,6 +40,121 @@
   position: relative;
 }
 
+.filter-nav {
+  width: 100%;
+  text-align: center;
+}
+.filter-nav li {
+  float: none;
+  display: inline-block;
+  padding: 5px 8px;
+  margin: 0 7px;
+}
+.filter-nav .current a, .filter-nav a:hover {
+  border-bottom: 1px #1d1d21 solid;
+  background-color: transparent !important;
+}
+.filter-nav .current a {
+  color: #1d1d21;
+  font-weight: bold;
+}
+
+.portfolio-container {
+  padding: 2% 2% 0;
+  -webkit-backface-visibility: hidden;
+  text-align: center;
+}
+
+.portfolio-container:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+.portfolio-container .mix,
+.portfolio-container .gap {
+  display: inline-block;
+  width: 49%;
+}
+
+.portfolio-container .mix {
+  margin-bottom: 2%;
+  display: none;
+}
+
+.portfolio-container .mix:before {
+  content: '';
+  display: inline-block;
+  padding-top: 10%;
+}
+
+@media all and (min-width: 420px) {
+  .portfolio-container .mix,
+  .portfolio-container .gap {
+    width: 32%;
+  }
+}
+@media all and (min-width: 640px) {
+  .portfolio-container .mix,
+  .portfolio-container .gap {
+    width: 22.5%;
+  }
+}
+.project-box {
+  margin: 10px;
+}
+.project-box .box-caption {
+  margin-bottom: 20px;
+  height: 100px;
+  text-align: center;
+  padding: 10px;
+}
+.project-box .project-image1 {
+  display: block;
+  background: url(../images/test.jpg) no-repeat center top;
+  height: 300px;
+  overflow: hidden;
+  background-size: Auto 300px;
+}
+.project-box .project-image2 {
+  display: block;
+  background: url(../images/test2.jpg) no-repeat center top;
+  height: 300px;
+  overflow: hidden;
+  background-size: Auto 300px;
+}
+.project-box .project-image3 {
+  display: block;
+  background: url(../images/test3.jpg) no-repeat center top;
+  height: 300px;
+  overflow: hidden;
+  background-size: Auto 300px;
+}
+
+.clear {
+  clear: both;
+  float: none;
+}
+
+.see-project {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-decoration: none;
+  opacity: 0;
+}
+
+.project-box a:hover {
+  opacity: 1;
+  transition: .2s ease;
+}
+
+.hidden {
+  display: none;
+}
+
 .my-navbar-wrapper.affix {
   top: 0;
   width: 100%;
