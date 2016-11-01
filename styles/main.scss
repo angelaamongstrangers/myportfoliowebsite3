@@ -193,11 +193,41 @@ html, body {
   text-decoration: none;
   opacity: 0;
   }
-.work-section-content {
-  a:hover {
-    opacity: 1;
-    transition: .2s ease;
+// .work-section-content {
+//   a:hover {
+//     opacity: 1;
+//     transition: .2s ease;
+//   }
+// }
+.see-project{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-decoration: none;
+  opacity: 0;
+  position: relative;
+  .color-box {
+    background-color: lightgrey;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+    position: absolute;
   }
+  .text-box {
+    position: absolute;
+    padding: 40px 50px;
+    background-color: #fff;
+  }
+}
+
+.see-project:hover {
+  opacity: 1;
+  transition: .3s ease;
 }
 .transition-width {
    transition: all 2s ease-out;
