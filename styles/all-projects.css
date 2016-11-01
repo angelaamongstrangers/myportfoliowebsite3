@@ -82,12 +82,6 @@
   display: none;
 }
 
-.portfolio-container .mix:before {
-  content: '';
-  display: inline-block;
-  padding-top: 10%;
-}
-
 @media all and (min-width: 420px) {
   .portfolio-container .mix,
   .portfolio-container .gap {
@@ -101,7 +95,7 @@
   }
 }
 .project-box {
-  margin: 10px;
+  padding: 5px;
 }
 .project-box .project-image1 {
   display: block;
@@ -152,7 +146,7 @@
 }
 .see-project .text-box {
   position: absolute;
-  padding: 25px;
+  padding: 40px 50px;
   background-color: #fff;
 }
 
