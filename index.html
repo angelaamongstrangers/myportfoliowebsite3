@@ -18,12 +18,12 @@
       <div class="main__home-landing container-fluid" >
         <h1 class="main__home-landing__subtitle">design development</h1>
         <img class="main__home-landing__logo"  id="homesection" src="images/test-logo.png" alt="">
-        <nav class="navbar my-navbar-wrapper" id="sticky-nav" data-spy="affix" data-offset-top="500">
-          <ul class="nav navbar-nav my-navbar-wrapper__nav " id="navbar-target">
-            <li class="active my-navbar-wrapper__nav--list"><a href="#homesection">home</a></li>
-            <li class="my-navbar-wrapper__nav--list"><a href="#worksection">work</a></li>
-            <li class="my-navbar-wrapper__nav--list"><a href="#aboutsection">about</a></li>
-            <li class="my-navbar-wrapper__nav--list"><a href="#contactsection">contact</a></li>
+        <nav class="navbar my-navbar-wrapper responsive-nav" id="js-responsive-nav" data-spy="affix" data-offset-top="500">
+          <ul class="nav navbar-nav my-navbar-wrapper__nav responsive-nav__list" id="navbar-target">
+            <li class="active my-navbar-wrapper__nav--list responsive-nav__item"><a href="#homesection">home</a></li>
+            <li class="my-navbar-wrapper__nav--list"><a class="responsive-nav__link" href="#worksection">work</a></li>
+            <li class="my-navbar-wrapper__nav--list"><a class="responsive-nav__link" href="#aboutsection">about</a></li>
+            <li class="my-navbar-wrapper__nav--list"><a class="responsive-nav__link" href="#contactsection">contact</a></li>
           </ul>
         </nav>
       </div>
@@ -174,6 +174,15 @@
         });
       });
     });
+
+var responsiveNav = document.getElementById('js-responsive-nav');
+var responsiveNavBreakpoint = 720;
+
+responsiveNav.addEventListener('click', function(){
+    if(window.innerWidth < responsiveNavBreakpoint){
+        responsiveNav.classList.toggle("is-open");
+    }
+});
 
   </script>
 </html>
