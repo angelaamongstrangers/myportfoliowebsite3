@@ -10,21 +10,34 @@ body {
   line-height: 1.5;
 }
 
+.mobile-landing {
+  @media only screen and (max-width: 500px) {
+    display: none;
+  }
+}
+
 .main {
   background-color: $bg-color;
   padding: none;
+  @media only screen and (max-width: 500px) {
+    height: 50px
+  }
   //home-landing
   &__home-landing {
     height: 200px;
     padding: 10px 0;
     margin: auto;
+    @media only screen and (max-width: 500px) {
+      height: 150px;
+      padding:0;
+    }
     &__logo {
       padding-top:$gutter;
       display: block;
       margin: 0 auto;
       width: 150px;
       @media only screen and (max-width: 500px) {
-        width: 100px;
+        display: none;
       }
     }
 

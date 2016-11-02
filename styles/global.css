@@ -1,3 +1,9 @@
+@media only screen and (max-width: 500px) {
+  .main__home-landing__subtitle, .main__home-landing__logo {
+    display: none;
+  }
+}
+
 .my-navbar-wrapper {
   border-radius: none !important;
   width: 100%;
@@ -31,6 +37,12 @@
   font-size: 1.33333em;
   float: none !important;
   position: relative;
+}
+@media only screen and (max-width: 500px) {
+  .my-navbar-wrapper__nav--list {
+    display: block !important;
+    font-size: 2em;
+  }
 }
 .my-navbar-wrapper .my-logo img {
   float: left;
@@ -120,6 +132,7 @@
 .my-navbar-wrapper.affix-top {
   top: 0;
   width: 100%;
+  z-index: 999999;
 }
 
 .my-navbar-wrapper.affix + .container-fluid {

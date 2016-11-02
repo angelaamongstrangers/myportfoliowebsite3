@@ -3,14 +3,31 @@ body {
   line-height: 1.5;
 }
 
+@media only screen and (max-width: 500px) {
+  .mobile-landing {
+    display: none;
+  }
+}
+
 .main {
   background-color: #1d1d21;
   padding: none;
+}
+@media only screen and (max-width: 500px) {
+  .main {
+    height: 50px;
+  }
 }
 .main__home-landing {
   height: 200px;
   padding: 10px 0;
   margin: auto;
+}
+@media only screen and (max-width: 500px) {
+  .main__home-landing {
+    height: 150px;
+    padding: 0;
+  }
 }
 .main__home-landing__logo {
   padding-top: 1.5em;
@@ -20,7 +37,7 @@ body {
 }
 @media only screen and (max-width: 500px) {
   .main__home-landing__logo {
-    width: 100px;
+    display: none;
   }
 }
 

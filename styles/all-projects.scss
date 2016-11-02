@@ -7,24 +7,39 @@ $font-body:1em;
 .main {
   background-color: $bg-color;
   padding: none;
+  @media only screen and (max-width: 500px) {
+    height: 50px
+  }
   //home-landing
   &__home-landing {
     height: 200px;
     padding: 10px 0;
     margin: auto;
+    @media only screen and (max-width: 500px) {
+      height: 150px;
+      padding:0;
+    }
     &__logo {
       padding-top:$gutter;
       display: block;
       margin: 0 auto;
       width: 150px;
-      @media only screen and (max-width: 500px) {
-        width: 100px;
-      }
+        @media only screen and (max-width: 500px) {
+          display: none;
+        }
+      // @media only screen and (max-width: 500px) {
+      //   width: 100px;
+      // }
     }
 
   }//end of home-landing
 }//end of main
 
+.mobile-landing {
+  @media only screen and (max-width: 500px) {
+    display: none;
+  }
+}
 
 //filters
 .filter-wrapper {
