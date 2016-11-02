@@ -51,6 +51,12 @@
   position: relative;
 }
 
+.scrollable {
+  position: relative;
+  height: 1000px;
+  overflow-y: scroll;
+}
+
 section {
   padding: 40px 0;
   border-bottom: 1px solid #c1e1ec;
@@ -69,20 +75,33 @@ section:last-child {
   border-top: 1px solid #c1e1ec;
 }
 
-.affix-top {
+#Sidenav {
+  padding-top: 100px;
+}
+
+#Content {
+  padding-top: 50px;
+}
+
+#Sidenav li.active {
+  background-color: red;
+  color: blue;
+}
+
+#Sidenav.affix-top {
   position: relative;
 }
 
-.affix {
+#Sidenav.affix {
   top: 20px;
 }
 
-.affix,
-.affix-bottom {
+#Sidenav.affix,
+#Sidenav.affix-bottom {
   width: 213px;
 }
 
-.affix-bottom {
+#Sidenav.affix-bottom {
   position: absolute;
 }
 
