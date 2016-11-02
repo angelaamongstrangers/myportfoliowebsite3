@@ -1,53 +1,14 @@
+
 $bg-color: #1d1d21;
 $gutter: 1.5em;
 $brand-color: #eaa075;
 $font-head: 2em;
 $font-body:1em;
 
-
-.main {
-  background-color: $bg-color;
-  padding: none;
-  //home-landing
-  &__home-landing {
-    height: 200px;
-    padding: none;
-    &__logo {
-      padding-top:$gutter;
-      display: block;
-      margin: 0 auto;
-    }
-    .my-navbar-wrapper {
-      border-radius: none !important;
-      width: 100%;
-      margin: 0 !important;
-      left: 0;
-      text-align: center;
-      position: relative;
-      min-height: 50px;
-      border: none;
-      background-color: $bg-color !important;
-      border-color: none;
-      &__nav {
-        list-style-type: none;
-        margin: 0 auto;
-        padding: 0;
-        text-align: center;
-        width: 100%;
-        float: none;
-        &--list {
-          display: inline-block !important;
-          padding: $gutter/2;
-          color: $brand-color;
-          font-size: $font-head/1.5;
-          float: none !important;
-          position: relative;
-        }
-      }
-    }
-
-  }//end of home-landing
-}//end of main
+body {
+  position: relative;
+  line-height: 1.5;
+}
 
 //project-hero
 .project-hero {
@@ -56,120 +17,78 @@ $font-body:1em;
   width: 100%;
   height: 500px;
 }
-//end of project-hero
 
-//sticky-sidebar
-
-//end of sticky-sidebar
-
-//test
-
-
-
-.project-wrapper  {
+//table of contents
+#nav {
+  padding-top: 100px;
+  background-color: transparent;
+}
+#nav.affix-top {
   position: relative;
 }
-
-.scrollable {
-  position: relative;
-  height: 1000px;
-  overflow-y: scroll;
+#nav.affix {
+  top: 20px;
 }
+#nav.affix,
+#nav.affix-bottom {
+    width: 213px;
+}
+#nav.affix-bottom {
+  position: absolute;
+}
+#nav li .active, #nav li a, #nav li a:hover, .side-links li.active, .side-links li a, .side-links li a:hover, {
+  background-color: transparent !important;
+  // font-weight: bold;
+  color: black;
+}
+#nav li .active, .side-links li.active {
+  font-weight: bold;
+}
+
+//project contents
 section {
   padding: 40px 0;
-  border-bottom: 1px solid #c1e1ec;
 }
-
-#web-development,
-#mobile-development {
-  padding-bottom: 0;
+.content-div {
+  width: 100%;
+  height: 700px;
 }
-
 section:last-child {
   border-bottom: none;
 }
 
+//mini-nav
+#web-development,
+#mobile-development {
+  padding-bottom: 0;
+}
+.nav .nav {
+  display: none;
+}
+.nav .active .nav {
+  display: block;
+}
+.nav .nav a {
+  font-weight: normal;
+  font-size: .85em;
+}
+.nav .nav span {
+  margin: 0 5px 0 2px;
+}
+.nav .nav .active a,
+.nav .nav .active:hover a,
+.nav .nav .active:focus a {
+  font-weight: bold;
+  padding-left: 30px;
+  border-left: 5px solid black;
+}
+.nav .nav .active span,
+.nav .nav .active:hover span,
+.nav .nav .active:focus span {
+  display: none;
+}
+
+//thank-you
 .application {
-  border-top: 1px solid #c1e1ec;
+  padding: 150px 0;
 }
-
-#Sidenav {
-  padding-top: 100px;
-}
-
-#Content {
-  padding-top: 50px;
-}
-
-
-#Sidenav li.active {
-  background-color: red;
-  color: blue;
-}
-
-#Sidenav.affix-top {
-  position: relative;
-}
-
-#Sidenav.affix {
-  top: 20px;
-}
-
-#Sidenav.affix,
-#Sidenav.affix-bottom {
-    width: 213px;
-}
-
-#Sidenav.affix-bottom {
-  position: absolute;
-}
-
-footer {
-  border-top: 1px solid #c1e1ec;
-  height: 50px;
-}
-
-footer p {
-  line-height: 50px;
-  margin-bottom: 0;
-}
-
-@media (min-width:1200px) {
-  .affix,
-  .affix-bottom {
-    width: 263px;
-  }
-}
-
-//end of test
-
-
-//global
-
-
-//end of global
-
-
-
-
-//bootstrap
-.my-navbar-wrapper.affix {
-    top:0;
-    width: 100%;
-    position: fixed !important;
-    z-index: 1000;
-}
-
-.my-navbar-wrapper.affix-top {
-    top: 0;
-    width: 100%;
-}
-
-.my-navbar-wrapper.affix + .container-fluid {
-    padding-top: 70px;
-}
-
-.navbar {
-  border-radius: 0 !important;
-}
-//end of bootstrap
