@@ -4,57 +4,49 @@
 }
 .main__home-landing {
   height: 200px;
-  padding: none;
+  padding: 10px 0;
+  margin: auto;
 }
 .main__home-landing__logo {
   padding-top: 1.5em;
   display: block;
   margin: 0 auto;
+  width: 150px;
 }
-.main__home-landing .my-navbar-wrapper {
-  border-radius: none !important;
-  width: 100%;
-  margin: 0 !important;
-  left: 0;
-  text-align: center;
-  position: relative;
-  min-height: 50px;
-  border: none;
-  background-color: #1d1d21 !important;
-  border-color: none;
-}
-.main__home-landing .my-navbar-wrapper__nav {
-  list-style-type: none;
-  margin: 0 auto;
-  padding: 0;
-  text-align: center;
-  width: 100%;
-  float: none;
-}
-.main__home-landing .my-navbar-wrapper__nav--list {
-  display: inline-block !important;
-  padding: 0.75em;
-  color: #eaa075;
-  font-size: 1.33333em;
-  float: none !important;
-  position: relative;
+@media only screen and (max-width: 500px) {
+  .main__home-landing__logo {
+    width: 100px;
+  }
 }
 
-.filter-nav {
+.filter-wrapper {
+  padding: 0;
+  margin: 0;
+  font-size: 0.95em;
+}
+.filter-wrapper .navbar {
+  margin: 70px auto 0 auto;
+}
+@media only screen and (max-width: 500px) {
+  .filter-wrapper .navbar {
+    margin: 35px auto 0 auto;
+  }
+}
+.filter-wrapper .navbar .filter-nav {
   width: 100%;
   text-align: center;
 }
-.filter-nav li {
+.filter-wrapper .navbar .filter-nav li {
   float: none;
   display: inline-block;
   padding: 5px 8px;
   margin: 0 7px;
 }
-.filter-nav .current a, .filter-nav a:hover {
+.filter-wrapper .navbar .filter-nav .current a, .filter-wrapper .navbar .filter-nav a:hover {
   border-bottom: 1px #1d1d21 solid;
   background-color: transparent !important;
 }
-.filter-nav .current a {
+.filter-wrapper .navbar .filter-nav .current a {
   color: #1d1d21;
   font-weight: bold;
 }
@@ -82,16 +74,16 @@
   display: none;
 }
 
-@media all and (min-width: 420px) {
+@media all and (min-width: 400px) {
   .portfolio-container .mix,
   .portfolio-container .gap {
-    width: 32%;
+    width: 100%;
   }
 }
 @media all and (min-width: 640px) {
   .portfolio-container .mix,
   .portfolio-container .gap {
-    width: 22.5%;
+    width: 32.5%;
   }
 }
 .project-box {
@@ -153,24 +145,4 @@
 .see-project:hover {
   opacity: 1;
   transition: .3s ease;
-}
-
-.my-navbar-wrapper.affix {
-  top: 0;
-  width: 100%;
-  position: fixed !important;
-  z-index: 1000;
-}
-
-.my-navbar-wrapper.affix-top {
-  top: 0;
-  width: 100%;
-}
-
-.my-navbar-wrapper.affix + .container-fluid {
-  padding-top: 70px;
-}
-
-.navbar {
-  border-radius: 0 !important;
 }

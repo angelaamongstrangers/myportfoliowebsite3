@@ -4,25 +4,57 @@ $brand-color: #eaa075;
 $font-head: 2em;
 $font-body:1em;
 
+.main {
+  background-color: $bg-color;
+  padding: none;
+  //home-landing
+  &__home-landing {
+    height: 200px;
+    padding: 10px 0;
+    margin: auto;
+    &__logo {
+      padding-top:$gutter;
+      display: block;
+      margin: 0 auto;
+      width: 150px;
+      @media only screen and (max-width: 500px) {
+        width: 100px;
+      }
+    }
+
+  }//end of home-landing
+}//end of main
+
 
 //filters
-.filter-nav {
-  width: 100%;
-  text-align: center;
-  li {
-    float: none;
-    display: inline-block;
-    padding: 5px 8px;
-    margin: 0 7px;
-  }
-  .current a, a:hover {
-    border-bottom: 1px $bg-color solid;
-    background-color: transparent !important;
+.filter-wrapper {
+  padding: 0;
+  margin: 0;
+  font-size: 0.95em;
+  .navbar {
+    margin: 70px auto 0 auto;
+    @media only screen and (max-width: 500px) {
+      margin: 35px auto 0 auto;
+    }
+    .filter-nav {
+      width: 100%;
+      text-align: center;
+      li {
+        float: none;
+        display: inline-block;
+        padding: 5px 8px;
+        margin: 0 7px;
+      }
+      .current a, a:hover {
+        border-bottom: 1px $bg-color solid;
+        background-color: transparent !important;
 
-  }
-  .current a {
-    color: $bg-color;
-    font-weight: bold;
+      }
+      .current a {
+        color: $bg-color;
+        font-weight: bold;
+      }
+    }
   }
 }
 //end of filters
@@ -47,21 +79,15 @@ $font-body:1em;
 }
 
 .portfolio-container  .mix {
-  // text-align: left;
   margin-bottom: 2%;
   display: none;
 }
 
-// .portfolio-container  .mix:before {
-//   content: '';
-//   display: inline-block;
-//   padding-top: 10%;
-// }
 
-@media all and (min-width: 420px) {
+@media all and (min-width: 400px) {
   .portfolio-container .mix,
   .portfolio-container .gap {
-    width: 32%;
+    width: 100%;
   }
 }
 
@@ -69,7 +95,7 @@ $font-body:1em;
   .portfolio-container .mix,
   .portfolio-container .gap {
     // width: 23.5%;
-    width: 22.5%;
+    width: 32.5%;
   }
 }
 //end of portfolio-mixitup
@@ -77,13 +103,6 @@ $font-body:1em;
 //individual image
 .project-box {
   padding: 5px;
-
-  // .box-caption {
-  // margin-bottom: 20px;
-  // height: 100px;
-  // text-align: center;
-  // padding: 10px;
-  // }
   .project-image1 {
     display: block;
     background: url(../images/test.jpg) no-repeat center top;

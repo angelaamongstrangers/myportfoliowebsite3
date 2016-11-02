@@ -8,6 +8,39 @@ html, body {
   background-color: $bg-color !important;
 }
 
+.main {
+  background-color: $bg-color;
+  padding: none;
+  @media only screen and (max-width: 500px) {
+    height: 300px
+  }
+  //home-landing
+  &__home-landing {
+    padding: none;
+    @media only screen and (max-width: 500px) {
+      height: 150px;
+      padding:0;
+    }
+    &__subtitle {
+      padding-top: $gutter/2;
+      font-size: $font-head;
+      color: $brand-color;
+      text-align: center;
+      @media only screen and (max-width: 500px) {
+        font-size: 1em;
+      }
+    }
+    &__logo {
+      padding-top:$gutter;
+      display: block;
+      margin: 0 auto;
+      @media only screen and (max-width: 500px) {
+        width: 150px;
+      }
+    }
+
+  }//end of home-landing
+}//end of main
 
 .content-wrapper {
   position: relative;
@@ -22,18 +55,30 @@ html, body {
       height: 600px;
       width: 50%;
       float: left;
+      @media only screen and (max-width: 500px) {
+        display: none;
+      }
     }
     .work-section-content {
       height: 2100px;
       width: 50%;
       float: right;
       // margin: 0 auto;
+      @media only screen and (max-width: 500px) {
+        height: 300px;
+        width: 100%;
+        float: none;
+      }
       .work-item1 {
         display: block;
         background: url(../images/test.jpg) no-repeat center top;
         height: 500px;
         overflow: hidden;
         background-size: Auto 500px;
+        @media only screen and (max-width: 500px) {
+          background: url(../images/test.jpg) no-repeat center;
+          height: 300px;
+        }
       }
 
       .work-item2 {
@@ -42,6 +87,10 @@ html, body {
         height: 500px;
         overflow: hidden;
         background-size: Auto 500px;
+        @media only screen and (max-width: 500px) {
+          background: url(../images/test2.jpg) no-repeat center;
+          height: 300px;
+        }
       }
       .work-item3 {
         display: block;
@@ -49,6 +98,10 @@ html, body {
         height: 500px;
         overflow: hidden;
         background-size: Auto 500px;
+        @media only screen and (max-width: 500px) {
+          background: url(../images/test3.jpg) no-repeat center;
+          height: 300px;
+        }
       }
       .see-all-work {
         text-align: center;
@@ -73,14 +126,25 @@ html, body {
       height: 600px;
       width: 50%;
       float: left;
+      @media only screen and (max-width: 500px) {
+        display: none;
+      }
     }
     .about-section-content {
       height: 1200px;
       background-color: #fff;
       width: 50%;
       float: right;
+      @media only screen and (max-width: 500px) {
+        height: auto;
+        width: 100%;
+        float: none;
+      }
       .about-text-wrapper {
         padding: 150px 80px;
+        @media only screen and (max-width: 500px) {
+          padding: $gutter;
+        }
       }
     }
   }// end of about-content
@@ -96,15 +160,27 @@ html, body {
       height: 600px;
       width: 50%;
       float: left;
+      @media only screen and (max-width: 500px) {
+        display: none;
+      }
     }
     .contact-section-content {
       height: 650px;
       margin-left: 110px;
       width: 50%;
       float: right;
+      @media only screen and (max-width: 500px) {
+        height: auto;
+        width: 100%;
+        float: none;
+        margin-left: 0;
+      }
       .contact-text-wrapper {
         padding: 150px 80px;
         color: #fff;
+        @media only screen and (max-width: 500px) {
+          padding: $gutter;
+        }
       }
     }
   }// end of contact-content
@@ -114,6 +190,9 @@ html, body {
     height: 650px;
     background-color: $brand-color;
     text-align: center;
+    @media only screen and (max-width: 500px) {
+      height: 350px;
+    }
     h1 {
       font-size: $font-head;
     }
