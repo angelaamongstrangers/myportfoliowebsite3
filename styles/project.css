@@ -53,6 +53,10 @@ body {
   }
 }
 
+.content-area {
+  margin-left: 5em;
+}
+
 @media only screen and (max-width: 500px) {
   .scrollspy {
     display: none;
@@ -96,9 +100,6 @@ body {
   }
 }
 
-section {
-  padding: 40px 0;
-}
 @media only screen and (max-width: 500px) {
   section {
     padding: 0 !important;
@@ -108,6 +109,9 @@ section {
 .content-div {
   width: 100%;
   height: auto;
+}
+.content-div img {
+  width: 100%;
 }
 
 section:last-child {
