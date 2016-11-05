@@ -208,5 +208,7 @@ section:last-child {
 }
 
 .application {
-  padding: 150px 0;
+  padding: 50px 0;
+  background-color: #ed9f80;
+  margin-top: 50px;
 }
