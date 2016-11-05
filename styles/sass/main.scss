@@ -8,6 +8,10 @@ $font-xs: 1em;
 $font-bold: 700;
 $font-family-1: 'adamnormal', sans-serif;
 $font-family-2: 'bellotaregular', sans-serif;
+$font-family-3: 'Work Sans', sans-serif;
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300');
+
 
 @font-face {
     font-family: 'adamnormal';
@@ -73,26 +77,26 @@ html, body {
 }//end of main
 
 //mobile-landing
-// .mobile-landing {
-//     display: none;
-//     @media only screen and (max-width: 500px) {
-//       display:block;
-//       height: 200px;
-//       background-color: $brand-color;
-//       padding: 0;
-//       width: 100%;
-//     }
-//     .mobile-logo {
-//       width: 100px;
-//       padding: 30px 5px 10px 5px;
-//       display: block;
-//       margin: 0 auto;
-//     }
-//     h4 {
-//       text-align: center;
-//       padding-bottom: 10px;
-//     }
-// }
+.mobile-landing {
+    display: none;
+    @media only screen and (max-width: 500px) {
+      display:block;
+      height: 150px;
+      background-color: #9e776a;
+      padding: 0;
+      width: 100%;
+    }
+    .mobile-logo {
+      width: 330px;
+      padding: 30px 5px 10px 5px;
+      display: block;
+      margin: 0 auto;
+    }
+    h4 {
+      text-align: center;
+      padding-bottom: 10px;
+    }
+}
 
 .content-wrapper {
   position: relative;
@@ -142,7 +146,7 @@ html, body {
         overflow: hidden;
         background-size: cover;
         @media only screen and (max-width: 500px) {
-          background: url(../images/test.jpg) no-repeat center;
+          background: url(../../images/curranbw.jpg) no-repeat center;
           height: 300px;
         }
       }
@@ -154,7 +158,7 @@ html, body {
         overflow: hidden;
         background-size: Auto 500px;
         @media only screen and (max-width: 500px) {
-          background: url(../images/test2.jpg) no-repeat center;
+          background: url(../../images/sftravel.jpg) no-repeat center;
           height: 300px;
         }
       }
@@ -165,7 +169,7 @@ html, body {
         overflow: hidden;
         background-size: Auto 500px;
         @media only screen and (max-width: 500px) {
-          background: url(../images/test3.jpg) no-repeat center;
+          background: url(../../images/amongstrangers.jpg) no-repeat center;
           height: 300px;
         }
       }
@@ -176,8 +180,13 @@ html, body {
         float: right;
         padding-top: 30px;
         font-size: 2em;
+        text-transform: uppercase;
         a {
           color: $brand-color;
+          font-family: $font-family-1;
+          &:hover {
+            font-weight: bolder;
+          }
         }
       }
     }//end of work-section-content
@@ -189,11 +198,15 @@ html, body {
       background-color: $brand-color;
       position: absolute;
       padding: 10px;
-      height: 600px;
+      height: 656px;
       width: 50%;
       float: left;
       @media only screen and (max-width: 500px) {
         display: none;
+      }
+      span {
+        color: $bg-color;
+
       }
     }
     .about-section-content {
@@ -208,6 +221,11 @@ html, body {
       }
       .about-text-wrapper {
         padding: 150px 80px;
+        font-family: $font-family-3;
+        font-size: $font-body/2;
+        @media only screen and (max-width: 850px) {
+          padding: 100px 30px;;
+        }
         @media only screen and (max-width: 500px) {
           padding: $gutter;
         }
@@ -223,7 +241,7 @@ html, body {
       background-color: #fff;
       position: absolute;
       padding: 10px;
-      height: 600px;
+      height: 656px;
       width: 50%;
       float: left;
       @media only screen and (max-width: 500px) {
@@ -243,7 +261,12 @@ html, body {
       }
       .contact-text-wrapper {
         padding: 150px 80px;
-        color: #fff;
+        color: $brand-color;
+        font-family: $font-family-3;
+        font-size: $font-body/2;
+        @media only screen and (max-width: 850px) {
+          padding: 100px 30px;;
+        }
         @media only screen and (max-width: 500px) {
           padding: $gutter;
         }
@@ -259,8 +282,10 @@ html, body {
     @media only screen and (max-width: 500px) {
       height: 350px;
     }
-    h1 {
-      font-size: $font-head;
+    h3 {
+      font-size: $font-body/2;
+      color: $bg-color;
+      font-family: $font-family-2;
     }
   }
 
@@ -287,7 +312,10 @@ a {
   align-items: center;
   height: 100%;
   span {
-    font-size: 2em;
+    font-size: 4em;
+    font-family: "bellotaregular", sans-serif;
+    color: #ed9f80;
+    padding-top: 20px;
   }
 }
 .work-item-link {
@@ -299,12 +327,7 @@ a {
   text-decoration: none;
   opacity: 0;
   }
-// .work-section-content {
-//   a:hover {
-//     opacity: 1;
-//     transition: .2s ease;
-//   }
-// }
+
 .see-project{
   text-align: center;
   display: flex;

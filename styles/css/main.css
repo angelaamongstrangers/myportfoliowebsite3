@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:300");
 @font-face {
   font-family: 'adamnormal';
   src: url("../../font/adam-webfont.woff2") format("woff2"), url("../../font/adam-webfont.woff") format("woff");
@@ -63,6 +64,29 @@ html, body {
   }
 }
 
+.mobile-landing {
+  display: none;
+}
+@media only screen and (max-width: 500px) {
+  .mobile-landing {
+    display: block;
+    height: 150px;
+    background-color: #9e776a;
+    padding: 0;
+    width: 100%;
+  }
+}
+.mobile-landing .mobile-logo {
+  width: 330px;
+  padding: 30px 5px 10px 5px;
+  display: block;
+  margin: 0 auto;
+}
+.mobile-landing h4 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
 .content-wrapper {
   position: relative;
   padding: 0;
@@ -115,7 +139,7 @@ html, body {
 }
 @media only screen and (max-width: 500px) {
   .content-wrapper .work-content .work-section-content .work-item1 {
-    background: url(../images/test.jpg) no-repeat center;
+    background: url(../../images/curranbw.jpg) no-repeat center;
     height: 300px;
   }
 }
@@ -128,7 +152,7 @@ html, body {
 }
 @media only screen and (max-width: 500px) {
   .content-wrapper .work-content .work-section-content .work-item2 {
-    background: url(../images/test2.jpg) no-repeat center;
+    background: url(../../images/sftravel.jpg) no-repeat center;
     height: 300px;
   }
 }
@@ -141,7 +165,7 @@ html, body {
 }
 @media only screen and (max-width: 500px) {
   .content-wrapper .work-content .work-section-content .work-item3 {
-    background: url(../images/test3.jpg) no-repeat center;
+    background: url(../../images/amongstrangers.jpg) no-repeat center;
     height: 300px;
   }
 }
@@ -152,15 +176,20 @@ html, body {
   float: right;
   padding-top: 30px;
   font-size: 2em;
+  text-transform: uppercase;
 }
 .content-wrapper .work-content .work-section-content .see-all-work a {
   color: #ed9f80;
+  font-family: "adamnormal", sans-serif;
+}
+.content-wrapper .work-content .work-section-content .see-all-work a:hover {
+  font-weight: bolder;
 }
 .content-wrapper .about-content .about-section-title {
   background-color: #ed9f80;
   position: absolute;
   padding: 10px;
-  height: 600px;
+  height: 656px;
   width: 50%;
   float: left;
 }
@@ -168,6 +197,9 @@ html, body {
   .content-wrapper .about-content .about-section-title {
     display: none;
   }
+}
+.content-wrapper .about-content .about-section-title span {
+  color: #1d1d21;
 }
 .content-wrapper .about-content .about-section-content {
   height: 1200px;
@@ -184,6 +216,13 @@ html, body {
 }
 .content-wrapper .about-content .about-section-content .about-text-wrapper {
   padding: 150px 80px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1em;
+}
+@media only screen and (max-width: 850px) {
+  .content-wrapper .about-content .about-section-content .about-text-wrapper {
+    padding: 100px 30px;
+  }
 }
 @media only screen and (max-width: 500px) {
   .content-wrapper .about-content .about-section-content .about-text-wrapper {
@@ -197,7 +236,7 @@ html, body {
   background-color: #fff;
   position: absolute;
   padding: 10px;
-  height: 600px;
+  height: 656px;
   width: 50%;
   float: left;
 }
@@ -222,7 +261,14 @@ html, body {
 }
 .content-wrapper .contact-content .contact-section-content .contact-text-wrapper {
   padding: 150px 80px;
-  color: #fff;
+  color: #ed9f80;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1em;
+}
+@media only screen and (max-width: 850px) {
+  .content-wrapper .contact-content .contact-section-content .contact-text-wrapper {
+    padding: 100px 30px;
+  }
 }
 @media only screen and (max-width: 500px) {
   .content-wrapper .contact-content .contact-section-content .contact-text-wrapper {
@@ -239,8 +285,10 @@ html, body {
     height: 350px;
   }
 }
-.content-wrapper .ty-section h1 {
-  font-size: 2em;
+.content-wrapper .ty-section h3 {
+  font-size: 1em;
+  color: #1d1d21;
+  font-family: "bellotaregular", sans-serif;
 }
 
 a {
@@ -265,7 +313,10 @@ a:hover {
   height: 100%;
 }
 .section-title span {
-  font-size: 2em;
+  font-size: 4em;
+  font-family: "bellotaregular", sans-serif;
+  color: #ed9f80;
+  padding-top: 20px;
 }
 
 .work-item-link {

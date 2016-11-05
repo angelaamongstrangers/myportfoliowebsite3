@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:300");
 @font-face {
   font-family: 'adamnormal';
   src: url("../../font/adam-webfont.woff2") format("woff2"), url("../../font/adam-webfont.woff") format("woff");
@@ -193,6 +194,8 @@ footer {
 footer p {
   line-height: 50px;
   margin-bottom: 0;
+  color: #f4b9a6;
+  font-family: "adamnormal", sans-serif;
 }
 
 @media (min-width: 1200px) {
