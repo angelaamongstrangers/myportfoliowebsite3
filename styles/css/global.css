@@ -17,7 +17,7 @@
   font-weight: normal;
   font-style: normal;
 }
-a.active, .active a, .active, li.active {
+a.active, .active a, .active, li.active, a {
   background-color: transparent !important;
 }
 

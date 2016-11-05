@@ -17,6 +17,10 @@
   font-weight: normal;
   font-style: normal;
 }
+body {
+  background-color: #E8CFC5;
+}
+
 .main {
   background-color: #1d1d21;
   padding: none;
@@ -41,7 +45,7 @@
   padding-top: 1.5em;
   display: block;
   margin: 0 auto;
-  width: 150px;
+  width: 320px;
 }
 @media only screen and (max-width: 500px) {
   .main__home-landing__logo {
@@ -61,7 +65,9 @@
   font-size: 0.95em;
 }
 .filter-wrapper .navbar {
-  margin: 70px auto 0 auto;
+  font-family: "adamnormal", sans-serif;
+  margin: 35px auto 0 auto;
+  font-weight: bolder;
 }
 @media only screen and (max-width: 500px) {
   .filter-wrapper .navbar {
@@ -78,6 +84,12 @@
   padding: 5px 8px;
   margin: 0 7px;
 }
+.filter-wrapper .navbar .filter-nav li a {
+  color: #1d1d21;
+}
+.filter-wrapper .navbar .filter-nav li a:hover {
+  font-weight: bolder;
+}
 .filter-wrapper .navbar .filter-nav .current a, .filter-wrapper .navbar .filter-nav a:hover {
   border-bottom: 1px #1d1d21 solid;
   background-color: transparent !important;
@@ -88,6 +100,7 @@
 }
 
 .portfolio-container {
+  min-height: 400px;
   padding: 2% 2% 0;
   -webkit-backface-visibility: hidden;
   text-align: center;
@@ -127,24 +140,24 @@
 }
 .project-box .project-image1 {
   display: block;
-  background: url(../images/test.jpg) no-repeat center top;
+  background: url(../../images/curranbw.jpg) no-repeat center top;
   height: 300px;
   overflow: hidden;
-  background-size: Auto 300px;
+  background-size: cover;
 }
 .project-box .project-image2 {
   display: block;
-  background: url(../images/test2.jpg) no-repeat center top;
+  background: url(../../images/sftravel.jpg) no-repeat center top;
   height: 300px;
   overflow: hidden;
-  background-size: Auto 300px;
+  background-size: cover;
 }
 .project-box .project-image3 {
   display: block;
-  background: url(../images/test3.jpg) no-repeat center top;
+  background: url(../../images/amongstrangers.jpg) no-repeat center top;
   height: 300px;
   overflow: hidden;
-  background-size: Auto 300px;
+  background-size: cover;
 }
 
 .clear {
@@ -163,7 +176,7 @@
   position: relative;
 }
 .see-project .color-box {
-  background-color: lightgrey;
+  background-color: #ed9f80;
   height: 100%;
   width: 100%;
   display: flex;
@@ -176,6 +189,12 @@
   position: absolute;
   padding: 40px 50px;
   background-color: #fff;
+  opacity: 0.7;
+}
+.see-project .text-box p {
+  font-size: 2em;
+  font-family: "bellotaregular", sans-serif;
+  color: #1d1d21;
 }
 
 .see-project:hover {
