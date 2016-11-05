@@ -1,11 +1,38 @@
 $bg-color: #1d1d21;
 $gutter: 1.5em;
-$brand-color: #eaa075;
+$brand-color: #ed9f80;
+$brand-color2: #f4b9a6;
 $font-head: 2em;
 $font-body:1em;
+$font-xs: 0.5em;
+$font-bold: 700;
+$font-family-1: 'adamnormal', sans-serif;
+$font-family-2: 'bellotaregular',serif;
 
+@font-face {
+    font-family: 'adamnormal';
+    src: url('../../font/adam-webfont.woff2') format('woff2'),
+         url('../../font/adam-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'bellotaregular';
+    src: url('../../font/bellota-regular-webfont.woff2') format('woff2'),
+         url('../../font/bellota-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'bellotalight';
+    src: url('../../font/bellota-light-webfont.woff2') format('woff2'),
+         url('../../font/bellota-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 .main__home-landing__subtitle, .main__home-landing__logo {
+  font-family: $font-family-2;
   @media only screen and (max-width: 500px) {
   display: none;
   }
@@ -30,21 +57,43 @@ $font-body:1em;
   &__nav {
     list-style-type: none;
     margin: 0 auto;
-    padding: 0;
+    // padding: 10px 0;
     text-align: center;
     width: 100%;
     float: none;
+    height: 70px;
     &--list {
+      text-transform: uppercase;
       display: inline-block !important;
       padding: $gutter/2;
-      color: $brand-color;
-      font-size: $font-head/1.5;
+      color: $brand-color2;
+      font-size: $font-body;
       float: none !important;
       position: relative;
+      &:not(:first-child) {
+        padding-left: 20px;
+      }
+      &:first-child {
+        padding-right: 20px;
+        padding-left: 0;
+      }
+      &:last-child {
+        padding-right: 40px;
+      }
       @media only screen and (max-width: 500px) {
         display: block !important;
         font-size: $font-head;
       }
+      a {
+        color: $brand-color2 !important;
+        font-family: $font-family-2 !important;
+        padding-bottom: 7px !important;
+        &:hover {
+          background-color: transparent !important;
+          border-bottom: 1px solid $brand-color2;
+        }
+      }
+
     }
   }
   .my-logo img {

@@ -1,3 +1,21 @@
+@font-face {
+  font-family: 'adamnormal';
+  src: url("../../font/adam-webfont.woff2") format("woff2"), url("../../font/adam-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'bellotaregular';
+  src: url("../../bellota-regular-webfont.woff2") format("woff2"), url("../../bellota-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'bellotalight';
+  src: url("../../bellota-light-webfont.woff2") format("woff2"), url("../../bellota-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 html, body {
   background-color: #1d1d21 !important;
 }
@@ -13,6 +31,7 @@ html, body {
 }
 .main__home-landing {
   padding: none;
+  height: 376px;
 }
 @media only screen and (max-width: 500px) {
   .main__home-landing {
@@ -21,10 +40,11 @@ html, body {
   }
 }
 .main__home-landing__subtitle {
-  padding-top: 0.75em;
-  font-size: 2em;
-  color: #eaa075;
+  padding-top: 1.5em;
+  display: block;
+  margin: 30px auto 20px auto;
   text-align: center;
+  width: 160px;
 }
 @media only screen and (max-width: 500px) {
   .main__home-landing__subtitle {
@@ -32,9 +52,10 @@ html, body {
   }
 }
 .main__home-landing__logo {
-  padding-top: 1.5em;
+  padding: 1.5em 0;
   display: block;
   margin: 0 auto;
+  width: 600px;
 }
 @media only screen and (max-width: 500px) {
   .main__home-landing__logo {
@@ -50,8 +71,7 @@ html, body {
 .content-wrapper .work-content .work-section-title {
   background-color: #fff;
   position: absolute;
-  padding: 10px;
-  height: 600px;
+  height: 656px;
   width: 50%;
   float: left;
 }
@@ -59,6 +79,20 @@ html, body {
   .content-wrapper .work-content .work-section-title {
     display: none;
   }
+}
+.content-wrapper .work-content .work-section-title span {
+  font-size: 4em;
+  font-family: "bellotaregular", sans-serif;
+  color: #ed9f80;
+  padding-top: 20px;
+}
+.content-wrapper .work-content .work-section-title a {
+  font-size: 0.3em;
+  text-transform: uppercase;
+  font-family: "adamnormal", sans-serif;
+  color: #ed9f80 !important;
+  border-bottom: 1px solid #ed9f80;
+  padding-top: 30px;
 }
 .content-wrapper .work-content .work-section-content {
   height: 2100px;
@@ -74,10 +108,10 @@ html, body {
 }
 .content-wrapper .work-content .work-section-content .work-item1 {
   display: block;
-  background: url(../images/test.jpg) no-repeat center top;
+  background: url(../../images/curranbw.jpg) no-repeat 40% 40%;
   height: 500px;
   overflow: hidden;
-  background-size: Auto 500px;
+  background-size: cover;
 }
 @media only screen and (max-width: 500px) {
   .content-wrapper .work-content .work-section-content .work-item1 {
@@ -87,7 +121,7 @@ html, body {
 }
 .content-wrapper .work-content .work-section-content .work-item2 {
   display: block;
-  background: url(../images/test2.jpg) no-repeat center top;
+  background: url(../../images/sftravel.jpg) no-repeat center top;
   height: 500px;
   overflow: hidden;
   background-size: Auto 500px;
@@ -100,7 +134,7 @@ html, body {
 }
 .content-wrapper .work-content .work-section-content .work-item3 {
   display: block;
-  background: url(../images/test3.jpg) no-repeat center top;
+  background: url(../../images/amongstrangers.jpg) no-repeat 90%;
   height: 500px;
   overflow: hidden;
   background-size: Auto 500px;
@@ -120,10 +154,10 @@ html, body {
   font-size: 2em;
 }
 .content-wrapper .work-content .work-section-content .see-all-work a {
-  color: #eaa075;
+  color: #ed9f80;
 }
 .content-wrapper .about-content .about-section-title {
-  background-color: #eaa075;
+  background-color: #ed9f80;
   position: absolute;
   padding: 10px;
   height: 600px;
@@ -197,7 +231,7 @@ html, body {
 }
 .content-wrapper .ty-section {
   height: 650px;
-  background-color: #eaa075;
+  background-color: #ed9f80;
   text-align: center;
 }
 @media only screen and (max-width: 500px) {
@@ -255,7 +289,7 @@ a:hover {
   position: relative;
 }
 .see-project .color-box {
-  background-color: lightgrey;
+  background-color: #ed9f80;
   height: 100%;
   width: 100%;
   display: flex;
@@ -268,6 +302,15 @@ a:hover {
   position: absolute;
   padding: 40px 50px;
   background-color: #fff;
+  color: #ed9f80;
+}
+.see-project .text-box h4 {
+  font-family: "bellotaregular", sans-serif;
+  font-size: 2em;
+}
+.see-project .text-box p {
+  font-family: "adamnormal", sans-serif;
+  text-transform: uppercase;
 }
 
 .see-project:hover {

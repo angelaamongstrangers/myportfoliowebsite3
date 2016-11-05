@@ -1,3 +1,24 @@
+@font-face {
+  font-family: 'adamnormal';
+  src: url("../../font/adam-webfont.woff2") format("woff2"), url("../../font/adam-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'bellotaregular';
+  src: url("../../font/bellota-regular-webfont.woff2") format("woff2"), url("../../font/bellota-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'bellotalight';
+  src: url("../../font/bellota-light-webfont.woff2") format("woff2"), url("../../font/bellota-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.main__home-landing__subtitle, .main__home-landing__logo {
+  font-family: "bellotaregular", serif;
+}
 @media only screen and (max-width: 500px) {
   .main__home-landing__subtitle, .main__home-landing__logo {
     display: none;
@@ -25,24 +46,44 @@
 .my-navbar-wrapper__nav {
   list-style-type: none;
   margin: 0 auto;
-  padding: 0;
   text-align: center;
   width: 100%;
   float: none;
+  height: 70px;
 }
 .my-navbar-wrapper__nav--list {
+  text-transform: uppercase;
   display: inline-block !important;
   padding: 0.75em;
-  color: #eaa075;
-  font-size: 1.33333em;
+  color: #f4b9a6;
+  font-size: 1em;
   float: none !important;
   position: relative;
+}
+.my-navbar-wrapper__nav--list:not(:first-child) {
+  padding-left: 20px;
+}
+.my-navbar-wrapper__nav--list:first-child {
+  padding-right: 20px;
+  padding-left: 0;
+}
+.my-navbar-wrapper__nav--list:last-child {
+  padding-right: 40px;
 }
 @media only screen and (max-width: 500px) {
   .my-navbar-wrapper__nav--list {
     display: block !important;
     font-size: 2em;
   }
+}
+.my-navbar-wrapper__nav--list a {
+  color: #f4b9a6 !important;
+  font-family: "bellotaregular", serif !important;
+  padding-bottom: 7px !important;
+}
+.my-navbar-wrapper__nav--list a:hover {
+  background-color: transparent !important;
+  border-bottom: 1px solid #f4b9a6;
 }
 .my-navbar-wrapper .my-logo img {
   float: left;
@@ -80,7 +121,7 @@
   margin-top: 5px;
   width: 100%;
   height: 2px;
-  background: #eaa075;
+  background: #ed9f80;
   border-radius: 9px;
   opacity: 1;
   -webkit-transform: rotate(0deg);

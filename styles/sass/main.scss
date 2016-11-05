@@ -1,9 +1,35 @@
 $bg-color: #1d1d21;
 $gutter: 1.5em;
-$brand-color: #eaa075;
+$brand-color: #ed9f80;
+$brand-color2: #f4b9a6;
 $font-head: 2em;
-$font-body:1em;
+$font-body:2em;
+$font-xs: 1em;
+$font-bold: 700;
+$font-family-1: 'adamnormal', sans-serif;
+$font-family-2: 'bellotaregular', sans-serif;
 
+@font-face {
+    font-family: 'adamnormal';
+    src: url('../../font/adam-webfont.woff2') format('woff2'),
+         url('../../font/adam-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'bellotaregular';
+    src: url('../../bellota-regular-webfont.woff2') format('woff2'),
+         url('../../bellota-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'bellotalight';
+    src: url('../../bellota-light-webfont.woff2') format('woff2'),
+         url('../../bellota-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 html, body {
   background-color: $bg-color !important;
 }
@@ -18,23 +44,26 @@ html, body {
   //home-landing
   &__home-landing {
     padding: none;
+    height: 376px;
     @media only screen and (max-width: 500px) {
       height: 150px;
       padding:0;
     }
     &__subtitle {
-      padding-top: $gutter/2;
-      font-size: $font-head;
-      color: $brand-color;
+      padding-top: $gutter;
+      display: block;
+      margin: 30px auto 20px auto;;
       text-align: center;
+      width: 160px;
       @media only screen and (max-width: 500px) {
         display: none;
       }
     }
     &__logo {
-      padding-top:$gutter;
+      padding:$gutter 0;
       display: block;
       margin: 0 auto;
+      width: 600px;
       @media only screen and (max-width: 500px) {
         display: none;
       }
@@ -74,12 +103,26 @@ html, body {
     .work-section-title {
       background-color: #fff;
       position: absolute;
-      padding: 10px;
-      height: 600px;
+      // padding: 10px;
+      height: 656px;
       width: 50%;
       float: left;
       @media only screen and (max-width: 500px) {
         display: none;
+      }
+      span {
+        font-size: $font-head*2;
+        font-family: $font-family-2;
+        color: $brand-color;
+        padding-top: 20px;
+      }
+      a {
+        font-size: 0.3em;
+        text-transform: uppercase;
+        font-family: $font-family-1;
+        color: $brand-color !important;
+        border-bottom: 1px solid $brand-color;
+        padding-top: 30px;
       }
     }
     .work-section-content {
@@ -94,10 +137,10 @@ html, body {
       }
       .work-item1 {
         display: block;
-        background: url(../images/test.jpg) no-repeat center top;
+        background: url(../../images/curranbw.jpg) no-repeat 40% 40%;
         height: 500px;
         overflow: hidden;
-        background-size: Auto 500px;
+        background-size: cover;
         @media only screen and (max-width: 500px) {
           background: url(../images/test.jpg) no-repeat center;
           height: 300px;
@@ -106,7 +149,7 @@ html, body {
 
       .work-item2 {
         display: block;
-        background: url(../images/test2.jpg) no-repeat center top;
+        background: url(../../images/sftravel.jpg) no-repeat center top;
         height: 500px;
         overflow: hidden;
         background-size: Auto 500px;
@@ -117,7 +160,7 @@ html, body {
       }
       .work-item3 {
         display: block;
-        background: url(../images/test3.jpg) no-repeat center top;
+        background: url(../../images/amongstrangers.jpg) no-repeat 90%;
         height: 500px;
         overflow: hidden;
         background-size: Auto 500px;
@@ -272,7 +315,7 @@ a {
   opacity: 0;
   position: relative;
   .color-box {
-    background-color: lightgrey;
+    background-color: $brand-color;
     height: 100%;
     width: 100%;
     display: flex;
@@ -285,6 +328,15 @@ a {
     position: absolute;
     padding: 40px 50px;
     background-color: #fff;
+    color: $brand-color;
+    h4 {
+      font-family: $font-family-2;
+      font-size: $font-head;
+    }
+    p {
+      font-family: $font-family-1;
+      text-transform: uppercase;
+    }
   }
 }
 

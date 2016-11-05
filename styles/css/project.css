@@ -1,3 +1,21 @@
+@font-face {
+  font-family: 'adamnormal';
+  src: url("../../font/adam-webfont.woff2") format("woff2"), url("../../font/adam-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'bellotaregular';
+  src: url("../../bellota-regular-webfont.woff2") format("woff2"), url("../../bellota-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'bellotalight';
+  src: url("../../bellota-light-webfont.woff2") format("woff2"), url("../../bellota-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   position: relative;
   line-height: 1.5;

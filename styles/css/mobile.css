@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'adamnormal';
+  src: url("../../font/adam-webfont.woff2") format("woff2"), url("../../font/adam-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'bellotaregular';
+  src: url("../../bellota-regular-webfont.woff2") format("woff2"), url("../../bellota-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'bellotalight';
+  src: url("../../bellota-light-webfont.woff2") format("woff2"), url("../../bellota-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.mobile-landing {
+  display: none;
+}
+@media only screen and (max-width: 500px) {
+  .mobile-landing {
+    display: block;
+    height: 200px;
+    background-color: #ed9f80;
+    padding: 0;
+    width: 100%;
+  }
+}
+.mobile-landing .mobile-logo {
+  width: 100px;
+  padding: 30px 5px 10px 5px;
+  display: block;
+  margin: 0 auto;
+}
+.mobile-landing h4 {
+  text-align: center;
+  padding-bottom: 10px;
+}
