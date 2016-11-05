@@ -35,6 +35,10 @@ $font-family-3: 'Work Sans', sans-serif;
 }
 
 
+a.active, .active a, .active, li.active {
+  background-color: transparent !important;
+}
+
 
 .main__home-landing__subtitle, .main__home-landing__logo {
   font-family: $font-family-2;
@@ -67,6 +71,9 @@ $font-family-3: 'Work Sans', sans-serif;
     width: 100%;
     float: none;
     height: 70px;
+    @media only screen and (max-width: 500px) {
+      height: auto;
+    }
     &--list {
       text-transform: uppercase;
       display: inline-block !important;
@@ -77,6 +84,9 @@ $font-family-3: 'Work Sans', sans-serif;
       position: relative;
       &:not(:first-child) {
         padding-left: 20px;
+        @media only screen and (max-width: 500px) {
+          padding-left: 0;
+        }
       }
       &:first-child {
         padding-right: 20px;
@@ -84,6 +94,9 @@ $font-family-3: 'Work Sans', sans-serif;
       }
       &:last-child {
         padding-right: 40px;
+        @media only screen and (max-width: 500px) {
+          padding-right: 0;
+        }
       }
       @media only screen and (max-width: 500px) {
         display: block !important;
