@@ -1,4 +1,5 @@
 $bg-color: #1d1d21;
+$light-bg: #E8CFC5;
 $gutter: 1.5em;
 $brand-color: #ed9f80;
 $brand-color2: #f4b9a6;
@@ -38,6 +39,7 @@ $font-family-3: 'Work Sans', sans-serif;
 body {
   position: relative;
   line-height: 1.5;
+  background-color: #fff;
 }
 
 .mobile-landing {
@@ -65,7 +67,7 @@ body {
       padding-top:$gutter;
       display: block;
       margin: 0 auto;
-      width: 150px;
+      width: 320px;
       @media only screen and (max-width: 500px) {
         display: none;
       }
@@ -76,17 +78,47 @@ body {
 
 //project-hero
 .project-hero {
-  background: url(../images/project1-hero.jpg) no-repeat center top;
+  background: url(../../images/curranbw.jpg) no-repeat 50% 45%;
   background-size: cover;
   width: 100%;
   height: 500px;
-  @media only screen and (max-width: 500px) {
-    height: 350px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .color-box {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    background-color: #1d1d21;
+    opacity: 0.6;
   }
+  img {
+    position: absolute;
+    width: 350px;
+    // background-color: #fff;
+  }
+  // height: 100%;
+  // span {
+  //   font-size: 4em;
+  //   font-family: "bellotaregular", sans-serif;
+  //   color: #ed9f80;
+  //   padding: 20px 40px;
+  //   background-color: $bg-color;
+  // }
+  // @media only screen and (max-width: 500px) {
+  //   height: 350px;
+  // }
 }
 
 .content-area {
   margin-left: 5em;
+  @media only screen and (max-width: 990px) {
+    margin: -2px -15px 0 -15px;
+  }
+  // @media only screen and (max-width: 500px) {
+  //   margin-left: 1em;
+  // }
 }
 
 //table of contents
@@ -96,9 +128,23 @@ body {
   }
 }
 #nav {
-  padding-top: 100px;
+  padding-top: 65px;
   background-color: transparent;
 }
+
+#nav li a p {
+  font-size: 1.2em;
+  font-family: $font-family-3;
+  font-weight: bolder;
+}
+
+#nav li a  {
+  // color: $brand-color;
+  font-family: $font-family-2;
+  font-size: 1.2em;
+  padding: 5px 15px !important;
+}
+
 #nav.affix-top {
   position: relative;
 }
@@ -115,10 +161,17 @@ body {
 #nav li .active, #nav li a, #nav li a:hover, .side-links li.active, .side-links li a, .side-links li a:hover, {
   background-color: transparent !important;
   // font-weight: bold;
-  color: black;
+  color: $bg-color;
 }
 #nav li .active, .side-links li.active {
   font-weight: bold;
+  color: $brand-color !important;
+  border-bottom: 1px solid $brand-color;
+}
+
+.nav .nav .active a, .nav .nav .active:hover a, .nav .nav .active:focus a {
+  border-left: 5px solid $brand-color !important;
+  // color: $brand-color !important;
 }
 
 //project contents
