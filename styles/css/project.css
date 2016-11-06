@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Work+Sans:300");
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:300,400,500");
 @font-face {
   font-family: 'adamnormal';
   src: url("../../font/adam-webfont.woff2") format("woff2"), url("../../font/adam-webfont.woff") format("woff");
@@ -62,7 +62,7 @@ body {
 }
 
 .project-hero {
-  background: url(../../images/curranbw.jpg) no-repeat 50% 45%;
+  background: url(../../images/amongstrangers.jpg) no-repeat 50% 45%;
   background-size: cover;
   width: 100%;
   height: 500px;
@@ -80,7 +80,7 @@ body {
 }
 .project-hero img {
   position: absolute;
-  width: 350px;
+  width: 400px;
 }
 
 .content-area {
@@ -105,7 +105,7 @@ body {
 
 #nav li a p {
   font-size: 1.2em;
-  font-family: "Work Sans", sans-serif;
+  font-family: "bellotaregular", sans-serif;
   font-weight: bolder;
 }
 
@@ -211,4 +211,179 @@ section:last-child {
   padding: 50px 0;
   background-color: #ed9f80;
   margin-top: 50px;
+}
+
+#overview {
+  height: 500px;
+  color: #1d1d21;
+}
+#overview .content-div {
+  height: 500px;
+  margin: 0 auto;
+}
+#overview .content-overview {
+  background: url(../../images/overview.jpg) no-repeat 50% 60%;
+  background-size: cover;
+  width: 100%;
+}
+#overview .color-box {
+  height: 500px;
+  background-color: #daae9c;
+  width: 100%;
+  position: absolute;
+  opacity: 0.85;
+}
+#overview .pad-box {
+  margin: 0 auto;
+  padding: 50px;
+  width: 750px;
+  position: absolute;
+}
+#overview .pad-box h2 {
+  padding-bottom: 30px;
+  font-family: "adamnormal", sans-serif;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: #1d1d21;
+  border-bottom: 2px solid #1d1d21;
+}
+#overview .pad-box h4 {
+  font-style: italic;
+  padding: 20px 0;
+}
+#overview .pad-box p {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+}
+
+#brand-video {
+  display: none;
+  height: 600px;
+  background-color: #3e3e46;
+  color: #daae9c;
+}
+#brand-video .content-div {
+  height: 500px;
+  width: 100%;
+}
+#brand-video .pad-box {
+  margin: 0 auto;
+  padding: 50px;
+}
+#brand-video .pad-box h2 {
+  padding-bottom: 30px;
+  font-family: "adamnormal", sans-serif;
+  text-transform: uppercase;
+  font-weight: bolder;
+  border-bottom: 2px solid #daae9c;
+}
+#brand-video .pad-box iframe {
+  padding-top: 20px;
+  width: 650px;
+  height: 370px;
+}
+
+#branding-research {
+  height: auto;
+  background-color: #daae9c;
+  color: #1d1d21;
+}
+#branding-research .pad-box {
+  margin: 0 auto;
+  padding: 50px;
+}
+#branding-research .pad-box h2 {
+  padding-bottom: 20px;
+  font-family: "adamnormal", sans-serif;
+  text-transform: uppercase;
+  font-weight: bolder;
+  border-bottom: 2px solid #1d1d21;
+}
+#branding-research #target-market {
+  color: #1d1d21;
+  border-bottom: 1px solid #1d1d21;
+}
+#branding-research #target-market .pad-box {
+  margin: 0 auto;
+  padding: 50px;
+}
+#branding-research #target-market .pad-box img {
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+}
+#branding-research #target-market .pad-box h3 {
+  font-family: "bellotaregular", sans-serif;
+  font-weight: bolder;
+  padding-top: 20px;
+}
+#branding-research #target-market .pad-box p {
+  font-family: "Work Sans", sans-serif;
+}
+#branding-research #target-market .pad-box p span {
+  font-weight: 600;
+}
+#branding-research #competition {
+  border-bottom: 1px solid #1d1d21;
+  color: #1d1d21;
+}
+#branding-research #competition .pad-box {
+  margin: 0 auto;
+  padding: 30px 50px;
+}
+#branding-research #competition .pad-box h3 {
+  font-family: "bellotaregular", sans-serif;
+  font-weight: bolder;
+}
+#branding-research #competition .pad-box img {
+  width: 200px;
+  padding: 30px 0 0 0;
+  display: block;
+}
+#branding-research #competition .pad-box p {
+  padding-top: 10px;
+  font-family: "Work Sans", sans-serif;
+}
+#branding-research #inspiration {
+  border-bottom: 1px solid #1d1d21;
+  color: #1d1d21;
+}
+#branding-research #inspiration .pad-box {
+  margin: 0 auto;
+  padding: 30px 50px;
+}
+#branding-research #inspiration .pad-box h3 {
+  font-family: "bellotaregular", sans-serif;
+  font-weight: bolder;
+}
+#branding-research #inspiration .pad-box img {
+  height: 200px;
+  padding: 30px 0 0 0;
+  display: block;
+}
+#branding-research #inspiration .pad-box p {
+  padding-top: 10px;
+  font-family: "Work Sans", sans-serif;
+}
+#branding-research #inspiration .pad-box p span {
+  font-weight: 600;
+}
+#branding-research #process {
+  border-bottom: 1px solid #1d1d21;
+  padding-bottom: 50px;
+}
+#branding-research #process .pad-box {
+  margin: 0 auto;
+  padding: 30px 50px;
+}
+#branding-research #process .pad-box h3 {
+  font-family: "bellotaregular", sans-serif;
+  font-weight: bolder;
+}
+#branding-research #process .pad-box .responsive {
+  position: relative;
+  width: 600px;
+}
+#branding-research #process .pad-box .responsive img {
+  width: 600px;
 }
