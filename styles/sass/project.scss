@@ -402,34 +402,100 @@ section:last-child {
   }
   #process {
     border-bottom: 1px solid $bg-color;
-    padding-bottom: 50px;
-    .pad-box {
-      margin: 0 auto;
-      padding: 30px 50px;
-      // background-color: #fff;
+    padding: 30px 50px;
+    min-height: 380px;
       h3 {
         font-family: $font-family-2;
         font-weight: bolder;
         // color: $bg-color;
       }
-      .responsive {
-        position: relative;
-        width: 600px;
+      .img-wrapper {
+        margin: 0 auto;
+        padding:20px 0;
+        a {
           img {
-            width: 600px;
+            height: 100px;
+            padding: 5px 5px 5px 0;
+            display: inline-block;
           }
+        }
       }
-      // .mini-slide-wrap {
-      //   .slider-nav {
-      //     img {
-      //       height: 70px;
-      //     }
-      //   }
-      // }
-      // p {
-      //   padding-top: 10px;
-      //   font-family: $font-family-3;
-      // }
-    }
+      p {
+        font-style: italic;
+        padding-top: 10px;
+        font-family: $font-family-3;
+      }
+  }
+  #initial-designs {
+    border-bottom: 1px solid $bg-color;
+    padding: 30px 50px;
+    min-height: 400px;
+      h3 {
+        font-family: $font-family-2;
+        font-weight: bolder;
+      }
+      .img-wrapper {
+        margin: 0 auto;
+        padding:20px 0;
+        a {
+          img {
+            // height: 100px;
+            padding: 5px 5px 5px 0;
+            display: inline-block;
+          }
+          .img-long {
+            width: 250px;
+          }
+          .img-sq {
+            height: 100px;
+          }
+        }
+      }
+      p {
+        font-style: italic;
+        padding-top: 10px;
+        font-family: $font-family-3;
+      }
+  }
+  #final-logo-bg {
+    border-bottom: 1px solid $bg-color;
+    padding: 30px 50px;
+    min-height: 500px;
+      h3 {
+        font-family: $font-family-2;
+        font-weight: bolder;
+      }
+
+  }
+  #logo-lockups {
+    border-bottom: 1px solid $bg-color;
+    padding: 30px 50px;
+    min-height: 500px;
+      h3 {
+        font-family: $font-family-2;
+        font-weight: bolder;
+      }
+      .img-wrapper {
+        margin: 0 auto;
+        padding:10px 0;
+        a {
+          img {
+            // height: 100px;
+            padding: 5px 5px 5px 0;
+            display: inline-block;
+          }
+          .img-long {
+            width: 250px;
+          }
+          .img-sq {
+            height: 150px;
+          }
+        }
+      }
+      p {
+        font-style: italic;
+        font-family: $font-family-3;
+        padding-bottom: 15px;
+      }
   }
 }

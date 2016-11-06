@@ -370,20 +370,89 @@ section:last-child {
 }
 #branding-research #process {
   border-bottom: 1px solid #1d1d21;
-  padding-bottom: 50px;
-}
-#branding-research #process .pad-box {
-  margin: 0 auto;
   padding: 30px 50px;
+  min-height: 380px;
 }
-#branding-research #process .pad-box h3 {
+#branding-research #process h3 {
   font-family: "bellotaregular", sans-serif;
   font-weight: bolder;
 }
-#branding-research #process .pad-box .responsive {
-  position: relative;
-  width: 600px;
+#branding-research #process .img-wrapper {
+  margin: 0 auto;
+  padding: 20px 0;
 }
-#branding-research #process .pad-box .responsive img {
-  width: 600px;
+#branding-research #process .img-wrapper a img {
+  height: 100px;
+  padding: 5px 5px 5px 0;
+  display: inline-block;
+}
+#branding-research #process p {
+  font-style: italic;
+  padding-top: 10px;
+  font-family: "Work Sans", sans-serif;
+}
+#branding-research #initial-designs {
+  border-bottom: 1px solid #1d1d21;
+  padding: 30px 50px;
+  min-height: 400px;
+}
+#branding-research #initial-designs h3 {
+  font-family: "bellotaregular", sans-serif;
+  font-weight: bolder;
+}
+#branding-research #initial-designs .img-wrapper {
+  margin: 0 auto;
+  padding: 20px 0;
+}
+#branding-research #initial-designs .img-wrapper a img {
+  padding: 5px 5px 5px 0;
+  display: inline-block;
+}
+#branding-research #initial-designs .img-wrapper a .img-long {
+  width: 250px;
+}
+#branding-research #initial-designs .img-wrapper a .img-sq {
+  height: 100px;
+}
+#branding-research #initial-designs p {
+  font-style: italic;
+  padding-top: 10px;
+  font-family: "Work Sans", sans-serif;
+}
+#branding-research #final-logo-bg {
+  border-bottom: 1px solid #1d1d21;
+  padding: 30px 50px;
+  min-height: 500px;
+}
+#branding-research #final-logo-bg h3 {
+  font-family: "bellotaregular", sans-serif;
+  font-weight: bolder;
+}
+#branding-research #logo-lockups {
+  border-bottom: 1px solid #1d1d21;
+  padding: 30px 50px;
+  min-height: 500px;
+}
+#branding-research #logo-lockups h3 {
+  font-family: "bellotaregular", sans-serif;
+  font-weight: bolder;
+}
+#branding-research #logo-lockups .img-wrapper {
+  margin: 0 auto;
+  padding: 10px 0;
+}
+#branding-research #logo-lockups .img-wrapper a img {
+  padding: 5px 5px 5px 0;
+  display: inline-block;
+}
+#branding-research #logo-lockups .img-wrapper a .img-long {
+  width: 250px;
+}
+#branding-research #logo-lockups .img-wrapper a .img-sq {
+  height: 150px;
+}
+#branding-research #logo-lockups p {
+  font-style: italic;
+  font-family: "Work Sans", sans-serif;
+  padding-bottom: 15px;
 }
