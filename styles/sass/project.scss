@@ -115,8 +115,9 @@ body {
   }
 }
 #nav {
-  padding-top: 65px;
+  padding: 65px 0;
   background-color: transparent;
+  min-height: 500px;
 }
 
 #nav li a p {
@@ -222,7 +223,7 @@ section:last-child {
 .application {
   padding: 50px 0;
   background-color: $brand-color;
-  margin-top: 50px;
+  // margin-top: 50px;
 }
 
 
@@ -278,7 +279,7 @@ section:last-child {
 }
 
 #brand-video {
-  display: none;
+  // display: none;
   height: 600px;
   background-color: $bg-color2;
   color: $brand-color3;
@@ -307,6 +308,7 @@ section:last-child {
   }
 }
 
+//branding-research
 #branding-research {
   height: auto;
   background-color: $brand-color3;
@@ -498,4 +500,191 @@ section:last-child {
         padding-bottom: 15px;
       }
   }
+  #type-color {
+    border-bottom: 1px solid $bg-color;
+    padding: 30px 50px;
+    min-height: 500px;
+      h3 {
+        font-family: $font-family-2;
+        font-weight: bolder;
+        padding-bottom: 20px;
+      }
+      img {
+        background-color: #fff;
+        width: 500px;
+        padding: 20px;
+      }
+  }
+  #mockups {
+    padding: 30px 50px;
+    h3 {
+      font-family: $font-family-2;
+      font-weight: bolder;
+    }
+    .img-wrapper {
+      margin: 0 auto;
+      padding:20px 0;
+      a {
+        display: inline-block;
+        img {
+          width: 250px;
+          padding: 5px 5px 25px 0;
+          display: inline-block;
+        }
+      }
+      p {
+        font-size: 1.1em;
+        font-style: italic;
+        padding: 25px 0;
+        font-family: $font-family-3;
+        display: inline;
+      }
+    }
+  }
 }
+//end of branding-research
+
+//web design research
+#web-design {
+  height: auto;
+  background-color: $bg-color2;
+  color:$brand-color3 ;
+  .pad-box {
+    margin: 0 auto;
+    padding: 50px;
+    h2 {
+      padding-bottom: 20px;
+      font-family: $font-family-1;
+      text-transform: uppercase;
+      font-weight: bolder;
+      // color: $bg-color;
+      border-bottom: 2px solid $brand-color3;
+    }
+    #evolution {
+      border-bottom: 1px solid $brand-color3;
+      h3 {
+        font-family: $font-family-2;
+        font-weight: bolder;
+        padding-top: 25px;
+      }
+      .img-wrapper {
+        margin: 0 auto;
+        padding:10px 0 30px 0;
+        a {
+          display: inline-block;
+          img {
+            width: 180px;
+            padding: 5px 5px 5px 0;
+            // display: inline-block;
+          }
+        }
+        p {
+          width: 600px;
+          padding: 15px 0;
+          font-family: $font-family-3;
+          // display: inline;
+        }
+      }
+    }
+
+    #inspiration2 {
+      border-bottom: 1px solid $brand-color3;
+      h3 {
+        font-family: $font-family-2;
+        font-weight: bolder;
+        padding-top: 25px;
+      }
+      .img-wrapper {
+        margin: 0 auto;
+        padding:10px 0 30px 0;
+        a {
+          display: inline-block;
+          img {
+            width: 250px;
+            padding: 5px 5px 5px 0;
+            // display: inline-block;
+          }
+        }
+        p {
+          width: 600px;
+          padding: 15px 0;
+          font-family: $font-family-3;
+          // display: inline;
+        }
+      }
+    }
+
+    #ia {
+      border-bottom: 1px solid $brand-color3;
+      h3 {
+        font-family: $font-family-2;
+        font-weight: bolder;
+        padding-top: 25px;
+      }
+      .img-wrapper {
+        margin: 0 auto;
+        padding:10px 0 30px 0;
+        a {
+          display: inline-block;
+          img {
+            max-width: 100%;
+            width: 650px;
+            padding: 15px 5px 5px 0;
+            // display: inline-block;
+          }
+        }
+      }
+    }
+
+    #wireframes {
+      border-bottom: 1px solid $brand-color3;
+      h3 {
+        font-family: $font-family-2;
+        font-weight: bolder;
+        padding-top: 25px;
+      }
+      .img-wrapper {
+        margin: 0 auto;
+        padding:10px 0 30px 0;
+        a {
+          display: inline-block;
+          img {
+            max-width: 100%;
+            width: 650px;
+            padding: 5px 5px 5px 0;
+            // display: inline-block;
+          }
+        }
+      }
+    }
+    #high-fid {
+      // border-bottom: 1px solid $brand-color3;
+      min-height: 600px;
+      h3 {
+        font-family: $font-family-2;
+        font-weight: bolder;
+        padding-top: 25px;
+      }
+      .img-wrapper {
+        margin: 0 auto;
+        padding:10px 0 30px 0;
+          display: inline-block;
+          img {
+            max-width: 100%;
+            width: 650px;
+            padding: 5px 5px 5px 0;
+          }
+      }
+    }
+  }//end of pad box
+}//end of website research
+
+
+
+
+
+
+
+
+
+//end of web design research
