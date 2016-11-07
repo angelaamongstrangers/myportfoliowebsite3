@@ -81,10 +81,17 @@ body {
 .project-hero img {
   position: absolute;
   width: 400px;
+  max-width: 100%;
+}
+@media only screen and (max-width: 990px) {
+  .project-hero img {
+    width: 300px;
+  }
 }
 
 .content-area {
-  margin-left: 5em;
+  margin: 0 !important;
+  width: 100%;
 }
 @media only screen and (max-width: 990px) {
   .content-area {
@@ -92,16 +99,17 @@ body {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 992px) {
   .scrollspy {
     display: none;
   }
 }
 
 #nav {
-  padding: 65px 0;
+  padding: 65px 0 0 0;
   background-color: transparent;
   min-height: 500px;
+  margin-bottom: 30px !important;
 }
 
 #nav li a p {
@@ -148,30 +156,6 @@ body {
   border-left: 5px solid #ed9f80 !important;
 }
 
-@media only screen and (max-width: 500px) {
-  .project-content {
-    padding: 0 !important;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  section {
-    padding: 0 !important;
-  }
-}
-
-.content-div {
-  width: 100%;
-  height: auto;
-}
-.content-div img {
-  width: 100%;
-}
-
-section:last-child {
-  border-bottom: none;
-}
-
 #web-development,
 #mobile-development {
   padding-bottom: 0;
@@ -208,23 +192,51 @@ section:last-child {
   display: none;
 }
 
-.application {
-  padding: 50px 0;
-  background-color: #ed9f80;
+.project-content {
+  width: 75%;
+  position: relative;
+  padding: 0;
+}
+@media only screen and (max-width: 992px) {
+  .project-content {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .project-content {
+    padding: 0 !important;
+  }
+}
+
+section {
+  width: 100%;
+}
+@media only screen and (max-width: 500px) {
+  section {
+    padding: 0 !important;
+  }
+}
+@media only screen and (max-width: 500px) {
+  section div.pad-box {
+    padding: 1.5em !important;
+  }
+}
+
+section:last-child {
+  border-bottom: none;
 }
 
 #overview {
   height: 500px;
   color: #1d1d21;
-}
-#overview .content-div {
-  height: 500px;
-  margin: 0 auto;
-}
-#overview .content-overview {
   background: url(../../images/overview.jpg) no-repeat 50% 60%;
   background-size: cover;
   width: 100%;
+}
+@media only screen and (max-width: 500px) {
+  #overview {
+    min-height: 750px;
+  }
 }
 #overview .color-box {
   height: 500px;
@@ -233,11 +245,22 @@ section:last-child {
   position: absolute;
   opacity: 0.85;
 }
+@media only screen and (max-width: 500px) {
+  #overview .color-box {
+    min-height: 750px;
+  }
+}
 #overview .pad-box {
   margin: 0 auto;
   padding: 50px;
   width: 750px;
   position: absolute;
+}
+@media only screen and (max-width: 500px) {
+  #overview .pad-box {
+    width: 100%;
+    padding: 2em !important;
+  }
 }
 #overview .pad-box h2 {
   padding-bottom: 30px;
@@ -255,15 +278,27 @@ section:last-child {
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
 }
+#overview .pad-box a {
+  font-size: 1.2em;
+  display: block;
+  padding: 20px 0;
+  text-decoration: underline;
+  color: #3e3e46;
+  font-family: "Work Sans", sans-serif;
+}
+#overview .pad-box a:hover {
+  color: #f4b9a6;
+}
 
 #brand-video {
   height: 600px;
   background-color: #3e3e46;
   color: #daae9c;
 }
-#brand-video .content-div {
-  height: 500px;
-  width: 100%;
+@media only screen and (max-width: 500px) {
+  #brand-video {
+    height: 120%;
+  }
 }
 #brand-video .pad-box {
   margin: 0 auto;
@@ -280,6 +315,12 @@ section:last-child {
   padding-top: 20px;
   width: 650px;
   height: 370px;
+}
+@media only screen and (max-width: 500px) {
+  #brand-video .pad-box iframe {
+    width: 100%;
+    height: auto;
+  }
 }
 
 #branding-research {
@@ -310,6 +351,12 @@ section:last-child {
   height: 200px;
   display: block;
   margin: 0 auto;
+}
+@media only screen and (max-width: 500px) {
+  #branding-research #target-market .pad-box img {
+    width: 100%;
+    height: auto;
+  }
 }
 #branding-research #target-market .pad-box h3 {
   font-family: "bellotaregular", sans-serif;
@@ -372,6 +419,11 @@ section:last-child {
   padding: 30px 50px;
   min-height: 380px;
 }
+@media only screen and (max-width: 500px) {
+  #branding-research #process {
+    padding: 2em !important;
+  }
+}
 #branding-research #process h3 {
   font-family: "bellotaregular", sans-serif;
   font-weight: bolder;
@@ -394,6 +446,11 @@ section:last-child {
   border-bottom: 1px solid #1d1d21;
   padding: 30px 50px;
   min-height: 400px;
+}
+@media only screen and (max-width: 500px) {
+  #branding-research #initial-designs {
+    padding: 2em !important;
+  }
 }
 #branding-research #initial-designs h3 {
   font-family: "bellotaregular", sans-serif;
@@ -423,6 +480,11 @@ section:last-child {
   padding: 30px 50px;
   min-height: 500px;
 }
+@media only screen and (max-width: 500px) {
+  #branding-research #final-logo-bg {
+    padding: 2em !important;
+  }
+}
 #branding-research #final-logo-bg h3 {
   font-family: "bellotaregular", sans-serif;
   font-weight: bolder;
@@ -432,9 +494,19 @@ section:last-child {
   padding: 30px 50px;
   min-height: 500px;
 }
+@media only screen and (max-width: 500px) {
+  #branding-research #logo-lockups {
+    padding: 2em !important;
+  }
+}
 #branding-research #logo-lockups h3 {
   font-family: "bellotaregular", sans-serif;
   font-weight: bolder;
+}
+#branding-research #logo-lockups p {
+  font-style: italic;
+  font-family: "Work Sans", sans-serif;
+  padding: 15px 0;
 }
 #branding-research #logo-lockups .img-wrapper {
   margin: 0 auto;
@@ -460,6 +532,11 @@ section:last-child {
   padding: 30px 50px;
   min-height: 500px;
 }
+@media only screen and (max-width: 500px) {
+  #branding-research #type-color {
+    padding: 2em !important;
+  }
+}
 #branding-research #type-color h3 {
   font-family: "bellotaregular", sans-serif;
   font-weight: bolder;
@@ -470,8 +547,18 @@ section:last-child {
   width: 500px;
   padding: 20px;
 }
+@media only screen and (max-width: 500px) {
+  #branding-research #type-color img {
+    width: 100%;
+  }
+}
 #branding-research #mockups {
   padding: 30px 50px;
+}
+@media only screen and (max-width: 500px) {
+  #branding-research #mockups {
+    padding: 2em !important;
+  }
 }
 #branding-research #mockups h3 {
   font-family: "bellotaregular", sans-serif;
@@ -492,9 +579,7 @@ section:last-child {
 #branding-research #mockups .img-wrapper p {
   font-size: 1.1em;
   font-style: italic;
-  padding: 25px 0;
   font-family: "Work Sans", sans-serif;
-  display: inline;
 }
 
 #web-design {
@@ -521,9 +606,20 @@ section:last-child {
   font-weight: bolder;
   padding-top: 25px;
 }
+@media only screen and (max-width: 500px) {
+  #web-design .pad-box #evolution h3 {
+    padding: 1em 0 0 1.2em !important;
+  }
+}
 #web-design .pad-box #evolution .img-wrapper {
   margin: 0 auto;
   padding: 10px 0 30px 0;
+}
+@media only screen and (max-width: 500px) {
+  #web-design .pad-box #evolution .img-wrapper {
+    padding: 2em !important;
+    max-width: 100%;
+  }
 }
 #web-design .pad-box #evolution .img-wrapper a {
   display: inline-block;
@@ -537,6 +633,12 @@ section:last-child {
   padding: 15px 0;
   font-family: "Work Sans", sans-serif;
 }
+@media only screen and (max-width: 500px) {
+  #web-design .pad-box #evolution .img-wrapper p {
+    width: 100%;
+    padding: 0;
+  }
+}
 #web-design .pad-box #inspiration2 {
   border-bottom: 1px solid #daae9c;
 }
@@ -545,9 +647,20 @@ section:last-child {
   font-weight: bolder;
   padding-top: 25px;
 }
+@media only screen and (max-width: 500px) {
+  #web-design .pad-box #inspiration2 h3 {
+    padding: 1em 0 0 1.2em !important;
+  }
+}
 #web-design .pad-box #inspiration2 .img-wrapper {
   margin: 0 auto;
   padding: 10px 0 30px 0;
+}
+@media only screen and (max-width: 500px) {
+  #web-design .pad-box #inspiration2 .img-wrapper {
+    padding: 2em !important;
+    max-width: 100%;
+  }
 }
 #web-design .pad-box #inspiration2 .img-wrapper a {
   display: inline-block;
@@ -560,6 +673,12 @@ section:last-child {
   width: 600px;
   padding: 15px 0;
   font-family: "Work Sans", sans-serif;
+}
+@media only screen and (max-width: 500px) {
+  #web-design .pad-box #inspiration2 .img-wrapper p {
+    width: 100%;
+    padding: 0;
+  }
 }
 #web-design .pad-box #ia {
   border-bottom: 1px solid #daae9c;
@@ -618,4 +737,30 @@ section:last-child {
   max-width: 100%;
   width: 650px;
   padding: 5px 5px 5px 0;
+}
+
+.application {
+  min-height: 300px;
+  font-family: "bellotaregular", sans-serif;
+  padding: 50px 0;
+  background-color: #ed9f80;
+  color: #1d1d21;
+  text-align: center;
+}
+.application h1 {
+  margin-bottom: 60px;
+  font-size: 4em;
+}
+.application a {
+  padding-top: 40px;
+  color: #3e3e46;
+  font-size: 2em;
+  font-family: "Work Sans", sans-serif;
+  border-bottom: 2px solid #3e3e46;
+  padding-bottom: 5px;
+}
+.application a:hover {
+  color: #f4b9a6;
+  text-decoration: none;
+  border-bottom: 2px solid #f4b9a6;
 }

@@ -50,6 +50,9 @@ body {
   }
 }
 
+/////////////
+//NAV AREA//
+////////////
 .main {
   background-color: $bg-color;
   padding: none;
@@ -78,7 +81,11 @@ body {
   }//end of home-landing
 }//end of main
 
-//project-hero
+// END OF NAV AREA//
+
+////////////////
+//PROJECT HERO//
+////////////////
 .project-hero {
   background: url(../../images/amongstrangers.jpg) no-repeat 50% 45%;
   background-size: cover;
@@ -98,26 +105,41 @@ body {
   img {
     position: absolute;
     width: 400px;
+    max-width: 100%;
+    @media only screen and (max-width: 990px) {
+      width: 300px;
+    }
   }
 }
+//END OF PROJECT HERO
 
+////////////////////////
+//GENERAL CONTENT AREA//
+///////////////////////
 .content-area {
-  margin-left: 5em;
+  // margin: 0 3em;
+  margin: 0 !important;
+  width: 100%;
   @media only screen and (max-width: 990px) {
     margin: -2px -15px 0 -15px;
   }
 }
 
-//table of contents
+
+//LEFT SIDE//////////
+//TABLE OF CONTENTS//
+
 .scrollspy {
-  @media only screen and (max-width: 500px) {
+
+  @media only screen and (max-width: 992px) {
     display: none;
   }
 }
 #nav {
-  padding: 65px 0;
+  padding: 65px 0 0 0;
   background-color: transparent;
   min-height: 500px;
+  margin-bottom: 30px !important;
 }
 
 #nav li a p {
@@ -127,7 +149,6 @@ body {
 }
 
 #nav li a  {
-  // color: $brand-color;
   font-family: $font-family-2;
   font-size: 1.2em;
   padding: 5px 15px !important;
@@ -155,6 +176,7 @@ body {
   font-weight: bold;
   color: $brand-color !important;
   border-bottom: 1px solid $brand-color;
+
 }
 
 .nav .nav .active a, .nav .nav .active:hover a, .nav .nav .active:focus a {
@@ -162,33 +184,7 @@ body {
   // color: $brand-color !important;
 }
 
-//project contents
-.project-content {
-  @media only screen and (max-width: 500px) {
-    padding: 0 !important;
-  }
-}
-section {
-  // padding: 40px 0;
-  @media only screen and (max-width: 500px) {
-    padding: 0 !important;
-  }
-}
-.content-div {
-  width: 100%;
-  height: auto;
-  img {
-    width: 100%;
-  }
-  @media only screen and (max-width: 500px) {
-
-  }
-}
-section:last-child {
-  border-bottom: none;
-}
-
-//mini-nav
+//////SUB-NAV///////
 #web-development,
 #mobile-development {
   padding-bottom: 0;
@@ -219,29 +215,50 @@ section:last-child {
   display: none;
 }
 
-//thank-you
-.application {
-  padding: 50px 0;
-  background-color: $brand-color;
-  // margin-top: 50px;
+
+
+//RIGHT SIDE//
+//PROJECT CONTENTS//
+
+.project-content {
+  width: 75%;
+  position: relative;
+  padding: 0;
+  @media only screen and (max-width: 992px) {
+    width: 100%;
+  }
+  @media only screen and (max-width: 500px) {
+    padding: 0 !important;
+  }
+}
+section {
+  // padding: 40px 0;
+  width: 100%;
+  @media only screen and (max-width: 500px) {
+    padding: 0 !important;
+  }
+  div.pad-box {
+    @media only screen and (max-width: 500px) {
+      padding: $gutter !important;
+    }
+  }
+}
+section:last-child {
+  border-bottom: none;
 }
 
 
-//content division styling
 
 
+//EACH SECTION/CHAPTER STYLES////////
 #overview {
   height: 500px;
   color: $bg-color;
-  .content-div {
-    // width:600px;
-    height: 500px;
-    margin: 0 auto;
-  }
-  .content-overview {
-    background: url(../../images/overview.jpg) no-repeat 50% 60%;
-    background-size: cover;
-    width: 100%;
+  background: url(../../images/overview.jpg) no-repeat 50% 60%;
+  background-size: cover;
+  width: 100%;
+  @media only screen and (max-width: 500px) {
+    min-height: 750px;
   }
   .color-box {
     height: 500px;
@@ -249,15 +266,19 @@ section:last-child {
     width: 100%;
     position: absolute;
     opacity: 0.85;
+    @media only screen and (max-width: 500px) {
+      min-height: 750px;
+    }
   }
   .pad-box {
     margin: 0 auto;
     padding: 50px;
     width: 750px;
-    // color: $bg-color;
-    // z-index: 9999;
     position: absolute;
-    // background-color: #fff;
+    @media only screen and (max-width: 500px) {
+      width: 100%;
+      padding: 2em !important;
+    }
     h2 {
       padding-bottom: 30px;
       font-family: $font-family-1;
@@ -275,6 +296,17 @@ section:last-child {
       font-family: $font-family-3;
       font-weight: 400;
     }
+    a {
+      font-size: 1.2em;
+      display: block;
+      padding: 20px 0;
+      text-decoration: underline;
+      color: $bg-color2;
+      font-family: $font-family-3;
+      &:hover {
+        color: $brand-color2;
+      }
+    }
   }
 }
 
@@ -283,12 +315,9 @@ section:last-child {
   height: 600px;
   background-color: $bg-color2;
   color: $brand-color3;
-  .content-div {
-    height: 500px;
-    width: 100%;
-  }
-  .content-video {
-
+  @media only screen and (max-width: 500px) {
+    height: 120%;
+    // padding: $gutter;
   }
   .pad-box {
     margin: 0 auto;
@@ -304,6 +333,10 @@ section:last-child {
       padding-top: 20px;
       width: 650px;
       height: 370px;
+      @media only screen and (max-width: 500px) {
+        width: 100%;
+        height: auto;
+      }
     }
   }
 }
@@ -316,6 +349,9 @@ section:last-child {
   .pad-box {
     margin: 0 auto;
     padding: 50px;
+    // @media only screen and (max-width: 500px) {
+    //   padding: $gutter;
+    // }
     h2 {
       padding-bottom: 20px;
       font-family: $font-family-1;
@@ -335,6 +371,10 @@ section:last-child {
         height: 200px;
         display: block;
         margin: 0 auto;
+        @media only screen and (max-width: 500px) {
+          width: 100%;
+          height: auto;
+        }
       }
       h3 {
         font-family: $font-family-2;
@@ -406,6 +446,9 @@ section:last-child {
     border-bottom: 1px solid $bg-color;
     padding: 30px 50px;
     min-height: 380px;
+    @media only screen and (max-width: 500px) {
+      padding: 2em !important;
+    }
       h3 {
         font-family: $font-family-2;
         font-weight: bolder;
@@ -432,6 +475,9 @@ section:last-child {
     border-bottom: 1px solid $bg-color;
     padding: 30px 50px;
     min-height: 400px;
+    @media only screen and (max-width: 500px) {
+      padding: 2em !important;
+    }
       h3 {
         font-family: $font-family-2;
         font-weight: bolder;
@@ -463,6 +509,9 @@ section:last-child {
     border-bottom: 1px solid $bg-color;
     padding: 30px 50px;
     min-height: 500px;
+    @media only screen and (max-width: 500px) {
+      padding: 2em !important;
+    }
       h3 {
         font-family: $font-family-2;
         font-weight: bolder;
@@ -473,9 +522,17 @@ section:last-child {
     border-bottom: 1px solid $bg-color;
     padding: 30px 50px;
     min-height: 500px;
+    @media only screen and (max-width: 500px) {
+      padding: 2em !important;
+    }
       h3 {
         font-family: $font-family-2;
         font-weight: bolder;
+      }
+      p {
+        font-style: italic;
+        font-family: $font-family-3;
+        padding: 15px 0;
       }
       .img-wrapper {
         margin: 0 auto;
@@ -504,6 +561,9 @@ section:last-child {
     border-bottom: 1px solid $bg-color;
     padding: 30px 50px;
     min-height: 500px;
+    @media only screen and (max-width: 500px) {
+      padding: 2em !important;
+    }
       h3 {
         font-family: $font-family-2;
         font-weight: bolder;
@@ -513,10 +573,16 @@ section:last-child {
         background-color: #fff;
         width: 500px;
         padding: 20px;
+        @media only screen and (max-width: 500px) {
+          width: 100%;
+        }
       }
   }
   #mockups {
     padding: 30px 50px;
+    @media only screen and (max-width: 500px) {
+      padding: 2em !important;
+    }
     h3 {
       font-family: $font-family-2;
       font-weight: bolder;
@@ -535,9 +601,9 @@ section:last-child {
       p {
         font-size: 1.1em;
         font-style: italic;
-        padding: 25px 0;
+        // padding: 25px 0;
         font-family: $font-family-3;
-        display: inline;
+        // display: inline;
       }
     }
   }
@@ -566,10 +632,17 @@ section:last-child {
         font-family: $font-family-2;
         font-weight: bolder;
         padding-top: 25px;
+        @media only screen and (max-width: 500px) {
+          padding: 1em 0 0 1.2em !important;
+        }
       }
       .img-wrapper {
         margin: 0 auto;
         padding:10px 0 30px 0;
+        @media only screen and (max-width: 500px) {
+          padding: 2em !important;
+          max-width: 100%;
+        }
         a {
           display: inline-block;
           img {
@@ -583,6 +656,10 @@ section:last-child {
           padding: 15px 0;
           font-family: $font-family-3;
           // display: inline;
+          @media only screen and (max-width: 500px) {
+            width: 100%;
+            padding:0;
+          }
         }
       }
     }
@@ -593,10 +670,17 @@ section:last-child {
         font-family: $font-family-2;
         font-weight: bolder;
         padding-top: 25px;
+        @media only screen and (max-width: 500px) {
+          padding: 1em 0 0 1.2em !important;
+        }
       }
       .img-wrapper {
         margin: 0 auto;
         padding:10px 0 30px 0;
+        @media only screen and (max-width: 500px) {
+          padding: 2em !important;
+          max-width: 100%;
+        }
         a {
           display: inline-block;
           img {
@@ -610,6 +694,10 @@ section:last-child {
           padding: 15px 0;
           font-family: $font-family-3;
           // display: inline;
+          @media only screen and (max-width: 500px) {
+            width: 100%;
+            padding:0;
+          }
         }
       }
     }
@@ -677,14 +765,33 @@ section:last-child {
       }
     }
   }//end of pad box
-}//end of website research
+}//end of web design research
 
+//thank-you
+.application {
+  min-height: 300px;
+  font-family: $font-family-2;
+  padding: 50px 0;
+  background-color: $brand-color;
+  color: $bg-color;
+  // margin-top: 50px;
+  text-align: center;
+  h1 {
+    margin-bottom: 60px;
+    font-size: 4em;
+  }
+  a {
+    padding-top: 40px;
+    color: $bg-color2;
+    font-size: 2em;
+    font-family: $font-family-3;
+    border-bottom: 2px solid $bg-color2;
+    padding-bottom: 5px;
+    &:hover {
+      color: $brand-color2;
+      text-decoration: none;
+      border-bottom: 2px solid $brand-color2;
+    }
 
-
-
-
-
-
-
-
-//end of web design research
+  }
+}
