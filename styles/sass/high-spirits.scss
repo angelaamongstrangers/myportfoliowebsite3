@@ -1,0 +1,868 @@
+$bg-color: #1d1d21;
+$bg-color2: #3e3e46;
+$bg-pur: #eee6f5;
+$pur: #e7e4ff;
+$light-bg: #E8CFC5;
+$gutter: 1.5em;
+$brand-color: #ed9f80;
+$brand-color2: #f4b9a6;
+$brand-color3: #daae9c;
+$font-head: 2em;
+$font-body:1em;
+$font-xs: 0.5em;
+$font-bold: 700;
+$font-family-1: 'adamnormal', sans-serif;
+$font-family-2: 'bellotaregular', sans-serif;
+$font-family-3: 'Work Sans', sans-serif;
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,500');
+
+
+@font-face {
+    font-family: 'adamnormal';
+    src: url('../../font/adam-webfont.woff2') format('woff2'),
+         url('../../font/adam-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'bellotaregular';
+    src: url('../../bellota-regular-webfont.woff2') format('woff2'),
+         url('../../bellota-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'bellotalight';
+    src: url('../../bellota-light-webfont.woff2') format('woff2'),
+         url('../../bellota-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  position: relative;
+  line-height: 1.5;
+  background-color: #fff;
+}
+
+.mobile-landing {
+  @media only screen and (max-width: 500px) {
+    display: none;
+  }
+}
+
+/////////////
+//NAV AREA//
+////////////
+.main {
+  background-color: $bg-color;
+  padding: none;
+  @media only screen and (max-width: 500px) {
+    height: 50px
+  }
+  //home-landing
+  &__home-landing {
+    height: 200px;
+    padding: 10px 0;
+    margin: auto;
+    @media only screen and (max-width: 500px) {
+      height: 150px;
+      padding:0;
+    }
+    &__logo {
+      padding-top:$gutter;
+      display: block;
+      margin: 0 auto;
+      width: 320px;
+      @media only screen and (max-width: 500px) {
+        display: none;
+      }
+    }
+
+  }//end of home-landing
+}//end of main
+
+// END OF NAV AREA//
+
+////////////////
+//PROJECT HERO//
+////////////////
+.project-hero {
+  background: url(../../images/hs-screens.jpg) no-repeat 50% 10%;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    position: absolute;
+    width: 200px;
+    max-width: 100%;
+    @media only screen and (max-width: 990px) {
+      width: 100px;
+    }
+  }
+}
+//END OF PROJECT HERO
+
+////////////////////////
+//GENERAL CONTENT AREA//
+///////////////////////
+.content-area {
+  // margin: 0 3em;
+  margin: 0 !important;
+  width: 100%;
+  @media only screen and (max-width: 990px) {
+    margin: -2px -15px 0 -15px;
+  }
+}
+
+
+//LEFT SIDE//////////
+//TABLE OF CONTENTS//
+
+.scrollspy {
+
+  @media only screen and (max-width: 992px) {
+    display: none;
+  }
+}
+#nav {
+  padding: 65px 0 0 0;
+  background-color: transparent;
+  min-height: 500px;
+  margin-bottom: 30px !important;
+}
+
+#nav li a p {
+  font-size: 1.2em;
+  font-family: $font-family-2;
+  font-weight: bolder;
+}
+
+#nav li a  {
+  font-family: $font-family-2;
+  font-size: 1.2em;
+  padding: 5px 15px !important;
+}
+
+#nav.affix-top {
+  position: relative;
+}
+#nav.affix {
+  top: 20px;
+}
+#nav.affix,
+#nav.affix-bottom {
+    width: 213px;
+}
+#nav.affix-bottom {
+  position: absolute;
+}
+#nav li .active, #nav li a, #nav li a:hover, .side-links li.active, .side-links li a, .side-links li a:hover, {
+  background-color: transparent !important;
+  // font-weight: bold;
+  color: $bg-color;
+}
+#nav li .active, .side-links li.active {
+  font-weight: bold;
+  color: $brand-color !important;
+  border-bottom: 1px solid $brand-color;
+
+}
+
+.nav .nav .active a, .nav .nav .active:hover a, .nav .nav .active:focus a {
+  border-left: 5px solid $brand-color !important;
+  // color: $brand-color !important;
+}
+
+//////SUB-NAV///////
+#web-development,
+#mobile-development {
+  padding-bottom: 0;
+}
+.nav .nav {
+  display: none;
+}
+.nav .active .nav {
+  display: block;
+}
+.nav .nav a {
+  font-weight: normal;
+  font-size: .85em;
+}
+.nav .nav span {
+  margin: 0 5px 0 2px;
+}
+.nav .nav .active a,
+.nav .nav .active:hover a,
+.nav .nav .active:focus a {
+  font-weight: bold;
+  padding-left: 30px;
+  border-left: 5px solid black;
+}
+.nav .nav .active span,
+.nav .nav .active:hover span,
+.nav .nav .active:focus span {
+  display: none;
+}
+
+
+
+//RIGHT SIDE//
+//PROJECT CONTENTS//
+
+.project-content {
+  width: 75%;
+  position: relative;
+  padding: 0;
+  @media only screen and (max-width: 992px) {
+    width: 100%;
+  }
+  @media only screen and (max-width: 500px) {
+    padding: 0 !important;
+  }
+}
+section {
+  // padding: 40px 0;
+  width: 100%;
+  @media only screen and (max-width: 500px) {
+    padding: 0 !important;
+  }
+  div.pad-box {
+    @media only screen and (max-width: 500px) {
+      padding: $gutter !important;
+    }
+  }
+}
+section:last-child {
+  border-bottom: none;
+}
+
+
+
+
+//EACH SECTION/CHAPTER STYLES////////
+#intro {
+  height: 1500px;
+  color: $light-bg;
+  width: 100%;
+  background-color: $bg-color;
+  @media only screen and (max-width: 500px) {
+    min-height: 2000px;
+  }
+  .pad-box {
+    margin: 0 auto;
+    padding: 50px 50px 50px 100px;
+    width: 100%;
+    position: absolute;
+    @media only screen and (max-width: 500px) {
+      // width: 100%;
+      padding: 2em !important;
+    }
+    h2 {
+      padding-bottom: 30px;
+      font-family: $font-family-1;
+      text-transform: uppercase;
+      font-weight: bolder;
+      color: $light-bg;
+      border-bottom: 2px solid $light-bg;
+      // background-color: $bg-color;
+    }
+    #definition {
+      height: 350px;
+      border-bottom: 1px solid $light-bg;
+      .pad-box {
+        margin: 0 auto;
+        padding: 50px;
+        width: 700px;
+        h3 {
+          font-family: $font-family-2;
+          font-weight: bolder;
+          padding: 20px 0;
+        }
+        p {
+          font-family: $font-family-3;
+          span {
+            font-weight: bolder;
+          }
+        }
+      }
+    }//end of definition
+    #concept {
+      height: 350px;
+      border-bottom: 1px solid $light-bg;
+      .pad-box {
+        margin: 0 auto;
+        padding: 50px;
+        width: 700px;
+        h3 {
+          font-family: $font-family-2;
+          font-weight: bolder;
+          padding: 20px 0;
+        }
+        p {
+          font-family: $font-family-3;
+        }
+      }
+    }//end of concept
+    #inspiration {
+      height: 650px;
+      // border-bottom: 1px solid $light-bg;
+      .pad-box {
+        margin: 0 auto;
+        padding: 50px;
+        width: 700px;
+        h3 {
+          font-family: $font-family-2;
+          font-weight: bolder;
+          padding: 20px 0;
+        }
+        a {
+          img {
+            height: 200px;
+            padding-bottom: 20px;
+          }
+        }
+        p {
+          font-family: $font-family-3;
+        }
+      }
+    }//end of inspiration
+  }
+} //end of intro
+
+#concept-video {
+  // display: none;
+  height: 680px;
+  background-color: $bg-color2;
+  color: $light-bg;
+  @media only screen and (max-width: 500px) {
+    height: 120%;
+    // padding: $gutter;
+  }
+  .pad-box {
+    margin: 0 auto;
+    padding: 50px;
+    h2 {
+      padding-bottom: 30px;
+      font-family: $font-family-1;
+      text-transform: uppercase;
+      font-weight: bolder;
+      border-bottom: 2px solid $brand-color3;
+    }
+    iframe {
+      padding-top: 20px;
+      width: 100%;
+      height: 450px;;
+      @media only screen and (max-width: 500px) {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+} //end of concept video
+
+//branding-research
+#tech-research {
+  height: auto;
+  background-color: $bg-color;
+  color: $light-bg;
+  .pad-box {
+    margin: 0 auto;
+    padding: 50px;
+    // @media only screen and (max-width: 500px) {
+    //   padding: $gutter;
+    // }
+    h2 {
+      padding-bottom: 20px;
+      font-family: $font-family-1;
+      text-transform: uppercase;
+      font-weight: bolder;
+      // color: $bg-color;
+      border-bottom: 2px solid $light-bg;
+    }
+  }
+  #kirlian{
+    color: $light-bg;
+    border-bottom: 1px solid $light-bg;
+    .pad-box {
+      margin: 0 auto;
+      padding: 50px;
+      img {
+        width: 400px;
+        display: block;
+        margin: 0 auto;
+        @media only screen and (max-width: 500px) {
+          width: 100%;
+          height: auto;
+        }
+      }
+      h3 {
+        font-family: $font-family-2;
+        font-weight: bolder;
+        padding-top: 20px;
+      }
+      p {
+        font-family: $font-family-3;
+        span  {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  #guy {
+    border-bottom: 1px solid $light-bg;
+    color: $light-bg;
+    .pad-box {
+      margin: 0 auto;
+      padding:50px;
+      // background-color: $pur;
+      img {
+        width: 400px;
+        padding: 30px 0 0 0;
+        display: block;
+        margin: 0 auto;
+      }
+      h3 {
+        font-family: $font-family-2;
+        font-weight: bolder;
+        padding-top: 20px;
+      }
+      p {
+        padding-top: 10px;
+        font-family: $font-family-3;
+      }
+    }
+  }
+  //end of tech research
+
+  #wearable {
+    height: auto;
+    background-color: $bg-color;
+    color: $light-bg;
+    .pad-box {
+      margin: 0 auto;
+      padding: 50px;
+      // @media only screen and (max-width: 500px) {
+      //   padding: $gutter;
+      // }
+      h2 {
+        padding-bottom: 20px;
+        font-family: $font-family-1;
+        text-transform: uppercase;
+        font-weight: bolder;
+        // color: $bg-color;
+        border-bottom: 2px solid $light-bg;
+      }
+    }
+    #sketches{
+      color: $light-bg;
+      border-bottom: 1px solid $light-bg;
+      .pad-box {
+        margin: 0 auto;
+        padding: 50px;
+        img {
+          width: 400px;
+          display: block;
+          margin: 0 auto;
+          @media only screen and (max-width: 500px) {
+            width: 100%;
+            height: auto;
+          }
+        }
+        h3 {
+          font-family: $font-family-2;
+          font-weight: bolder;
+          padding-top: 20px;
+        }
+        p {
+          font-family: $font-family-3;
+          span  {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+    #prototype {
+      border-bottom: 1px solid $light-bg;
+      color: $light-bg;
+      .pad-box {
+        margin: 0 auto;
+        padding:50px;
+        // background-color: $pur;
+        img {
+          width: 400px;
+          padding: 30px 0 0 0;
+          display: block;
+          margin: 0 auto;
+        }
+        h3 {
+          font-family: $font-family-2;
+          font-weight: bolder;
+          padding-top: 20px;
+        }
+        p {
+          padding-top: 10px;
+          font-family: $font-family-3;
+        }
+      }
+    }
+  }
+    //end of wearable
+  #process {
+    border-bottom: 1px solid $bg-color;
+    padding: 30px 50px;
+    min-height: 380px;
+    @media only screen and (max-width: 500px) {
+      padding: 2em !important;
+    }
+      h3 {
+        font-family: $font-family-2;
+        font-weight: bolder;
+        // color: $bg-color;
+      }
+      .img-wrapper {
+        margin: 0 auto;
+        padding:20px 0;
+        a {
+          img {
+            height: 100px;
+            padding: 5px 5px 5px 0;
+            display: inline-block;
+          }
+        }
+      }
+      p {
+        font-style: italic;
+        padding-top: 10px;
+        font-family: $font-family-3;
+      }
+  }
+  #initial-designs {
+    border-bottom: 1px solid $bg-color;
+    padding: 30px 50px;
+    min-height: 400px;
+    @media only screen and (max-width: 500px) {
+      padding: 2em !important;
+    }
+      h3 {
+        font-family: $font-family-2;
+        font-weight: bolder;
+      }
+      .img-wrapper {
+        margin: 0 auto;
+        padding:20px 0;
+        a {
+          img {
+            // height: 100px;
+            padding: 5px 5px 5px 0;
+            display: inline-block;
+          }
+          .img-long {
+            width: 250px;
+          }
+          .img-sq {
+            height: 100px;
+          }
+        }
+      }
+      p {
+        font-style: italic;
+        padding-top: 10px;
+        font-family: $font-family-3;
+      }
+  }
+  #final-logo-bg {
+    border-bottom: 1px solid $bg-color;
+    padding: 30px 50px;
+    min-height: 500px;
+    @media only screen and (max-width: 500px) {
+      padding: 2em !important;
+    }
+      h3 {
+        font-family: $font-family-2;
+        font-weight: bolder;
+      }
+
+  }
+  #logo-lockups {
+    border-bottom: 1px solid $bg-color;
+    padding: 30px 50px;
+    min-height: 500px;
+    @media only screen and (max-width: 500px) {
+      padding: 2em !important;
+    }
+      h3 {
+        font-family: $font-family-2;
+        font-weight: bolder;
+      }
+      p {
+        font-style: italic;
+        font-family: $font-family-3;
+        padding: 15px 0;
+      }
+      .img-wrapper {
+        margin: 0 auto;
+        padding:10px 0;
+        a {
+          img {
+            // height: 100px;
+            padding: 5px 5px 5px 0;
+            display: inline-block;
+          }
+          .img-long {
+            width: 250px;
+          }
+          .img-sq {
+            height: 150px;
+          }
+        }
+      }
+      p {
+        font-style: italic;
+        font-family: $font-family-3;
+        padding-bottom: 15px;
+      }
+  }
+  #type-color {
+    border-bottom: 1px solid $bg-color;
+    padding: 30px 50px;
+    min-height: 500px;
+    @media only screen and (max-width: 500px) {
+      padding: 2em !important;
+    }
+      h3 {
+        font-family: $font-family-2;
+        font-weight: bolder;
+        padding-bottom: 20px;
+      }
+      img {
+        background-color: #fff;
+        width: 500px;
+        padding: 20px;
+        @media only screen and (max-width: 500px) {
+          width: 100%;
+        }
+      }
+  }
+  #mockups {
+    padding: 30px 50px;
+    @media only screen and (max-width: 500px) {
+      padding: 2em !important;
+    }
+    h3 {
+      font-family: $font-family-2;
+      font-weight: bolder;
+    }
+    .img-wrapper {
+      margin: 0 auto;
+      padding:20px 0;
+      a {
+        display: inline-block;
+        img {
+          width: 250px;
+          padding: 5px 5px 25px 0;
+          display: inline-block;
+        }
+      }
+      p {
+        font-size: 1.1em;
+        font-style: italic;
+        // padding: 25px 0;
+        font-family: $font-family-3;
+        // display: inline;
+      }
+    }
+  }
+}
+//end of branding-research
+
+//web design research
+#web-design {
+  height: auto;
+  background-color: $bg-color2;
+  color:$brand-color3 ;
+  .pad-box {
+    margin: 0 auto;
+    padding: 50px;
+    h2 {
+      padding-bottom: 20px;
+      font-family: $font-family-1;
+      text-transform: uppercase;
+      font-weight: bolder;
+      // color: $bg-color;
+      border-bottom: 2px solid $brand-color3;
+    }
+    #evolution {
+      border-bottom: 1px solid $brand-color3;
+      h3 {
+        font-family: $font-family-2;
+        font-weight: bolder;
+        padding-top: 25px;
+        @media only screen and (max-width: 500px) {
+          padding: 1em 0 0 1.2em !important;
+        }
+      }
+      .img-wrapper {
+        margin: 0 auto;
+        padding:10px 0 30px 0;
+        @media only screen and (max-width: 500px) {
+          padding: 2em !important;
+          max-width: 100%;
+        }
+        a {
+          display: inline-block;
+          img {
+            width: 180px;
+            padding: 5px 5px 5px 0;
+            // display: inline-block;
+          }
+        }
+        p {
+          width: 600px;
+          padding: 15px 0;
+          font-family: $font-family-3;
+          // display: inline;
+          @media only screen and (max-width: 500px) {
+            width: 100%;
+            padding:0;
+          }
+        }
+      }
+    }
+
+    #inspiration2 {
+      border-bottom: 1px solid $brand-color3;
+      h3 {
+        font-family: $font-family-2;
+        font-weight: bolder;
+        padding-top: 25px;
+        @media only screen and (max-width: 500px) {
+          padding: 1em 0 0 1.2em !important;
+        }
+      }
+      .img-wrapper {
+        margin: 0 auto;
+        padding:10px 0 30px 0;
+        @media only screen and (max-width: 500px) {
+          padding: 2em !important;
+          max-width: 100%;
+        }
+        a {
+          display: inline-block;
+          img {
+            width: 250px;
+            padding: 5px 5px 5px 0;
+            // display: inline-block;
+          }
+        }
+        p {
+          width: 600px;
+          padding: 15px 0;
+          font-family: $font-family-3;
+          // display: inline;
+          @media only screen and (max-width: 500px) {
+            width: 100%;
+            padding:0;
+          }
+        }
+      }
+    }
+
+    #ia {
+      border-bottom: 1px solid $brand-color3;
+      h3 {
+        font-family: $font-family-2;
+        font-weight: bolder;
+        padding-top: 25px;
+      }
+      .img-wrapper {
+        margin: 0 auto;
+        padding:10px 0 30px 0;
+        a {
+          display: inline-block;
+          img {
+            max-width: 100%;
+            width: 650px;
+            padding: 15px 5px 5px 0;
+            // display: inline-block;
+          }
+        }
+      }
+    }
+
+    #wireframes {
+      border-bottom: 1px solid $brand-color3;
+      h3 {
+        font-family: $font-family-2;
+        font-weight: bolder;
+        padding-top: 25px;
+      }
+      .img-wrapper {
+        margin: 0 auto;
+        padding:10px 0 30px 0;
+        a {
+          display: inline-block;
+          img {
+            max-width: 100%;
+            width: 650px;
+            padding: 5px 5px 5px 0;
+            // display: inline-block;
+          }
+        }
+      }
+    }
+    #high-fid {
+      // border-bottom: 1px solid $brand-color3;
+      min-height: 600px;
+      h3 {
+        font-family: $font-family-2;
+        font-weight: bolder;
+        padding-top: 25px;
+      }
+      .img-wrapper {
+        margin: 0 auto;
+        padding:10px 0 30px 0;
+          display: inline-block;
+          img {
+            max-width: 100%;
+            width: 650px;
+            padding: 5px 5px 5px 0;
+          }
+      }
+    }
+  }//end of pad box
+}//end of web design research
+
+//thank-you
+.application {
+  min-height: 300px;
+  font-family: $font-family-2;
+  padding: 50px 0;
+  background-color: $brand-color;
+  color: $bg-color;
+  // margin-top: 50px;
+  text-align: center;
+  h1 {
+    margin-bottom: 60px;
+    font-size: 4em;
+  }
+  a {
+    padding-top: 40px;
+    color: $bg-color2;
+    font-size: 2em;
+    font-family: $font-family-3;
+    border-bottom: 2px solid $bg-color2;
+    padding-bottom: 5px;
+    &:hover {
+      color: $brand-color2;
+      text-decoration: none;
+      border-bottom: 2px solid $brand-color2;
+    }
+
+  }
+}
