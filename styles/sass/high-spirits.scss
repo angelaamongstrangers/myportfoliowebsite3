@@ -1,7 +1,8 @@
 $bg-color: #1d1d21;
 $bg-color2: #3e3e46;
+$bg-color3: #313138;
 $bg-pur: #eee6f5;
-$pur: #e7e4ff;
+$pur: #bcb5f5;
 $light-bg: #E8CFC5;
 $gutter: 1.5em;
 $brand-color: #ed9f80;
@@ -133,7 +134,7 @@ body {
 #nav {
   padding: 65px 0 0 0;
   background-color: transparent;
-  min-height: 500px;
+  min-height: 700px;
   margin-bottom: 30px !important;
 }
 
@@ -170,12 +171,12 @@ body {
 #nav li .active, .side-links li.active {
   font-weight: bold;
   color: $brand-color !important;
-  border-bottom: 1px solid $brand-color;
+  border-bottom: 1px solid $pur;
 
 }
 
 .nav .nav .active a, .nav .nav .active:hover a, .nav .nav .active:focus a {
-  border-left: 5px solid $brand-color !important;
+  border-left: 5px solid $pur !important;
   // color: $brand-color !important;
 }
 
@@ -246,13 +247,44 @@ section:last-child {
 
 
 //EACH SECTION/CHAPTER STYLES////////
+
+
+#finals {
+  height: 400px;
+  color: $light-bg;
+  width: 100%;
+  background-color: $bg-color2;
+  .pad-box {
+    margin: 0 auto;
+    padding: 50px 50px 50px 100px;
+    width: 100%;
+    position: absolute;
+    @media only screen and (max-width: 500px) {
+      // width: 100%;
+      padding: 2em !important;
+      position: relative;
+    }
+    h2 {
+      padding-bottom: 30px;
+      font-family: $font-family-2;
+      font-weight: bolder;
+      color: $light-bg;
+      // border-bottom: 2px solid $light-bg;
+      // background-color: $bg-color;
+    }
+    .img-wrapper {
+
+    }
+  }
+}
+
 #intro {
   height: 1500px;
   color: $light-bg;
   width: 100%;
-  background-color: $bg-color;
+  background-color: $bg-color3;
   @media only screen and (max-width: 500px) {
-    min-height: 2000px;
+    min-height: 1700px;
   }
   .pad-box {
     margin: 0 auto;
@@ -262,6 +294,7 @@ section:last-child {
     @media only screen and (max-width: 500px) {
       // width: 100%;
       padding: 2em !important;
+      position: relative;
     }
     h2 {
       padding-bottom: 30px;
@@ -279,6 +312,9 @@ section:last-child {
         margin: 0 auto;
         padding: 50px;
         width: 700px;
+        @media only screen and (max-width: 700px) {
+          max-width: 100%;
+        }
         h3 {
           font-family: $font-family-2;
           font-weight: bolder;
@@ -286,6 +322,9 @@ section:last-child {
         }
         p {
           font-family: $font-family-3;
+          @media only screen and (max-width: 500px) {
+            // max-width: 100%;
+          }
           span {
             font-weight: bolder;
           }
@@ -295,10 +334,16 @@ section:last-child {
     #concept {
       height: 350px;
       border-bottom: 1px solid $light-bg;
+      @media only screen and (max-width: 700px) {
+        min-height: 400px;
+      }
       .pad-box {
         margin: 0 auto;
         padding: 50px;
         width: 700px;
+        @media only screen and (max-width: 700px) {
+          max-width: 100%;
+        }
         h3 {
           font-family: $font-family-2;
           font-weight: bolder;
@@ -312,10 +357,16 @@ section:last-child {
     #inspiration {
       height: 650px;
       // border-bottom: 1px solid $light-bg;
+      @media only screen and (max-width: 700px) {
+        min-height: 400px;
+      }
       .pad-box {
         margin: 0 auto;
         padding: 50px;
         width: 700px;
+        @media only screen and (max-width: 700px) {
+          max-width: 100%;
+        }
         h3 {
           font-family: $font-family-2;
           font-weight: bolder;
@@ -325,6 +376,10 @@ section:last-child {
           img {
             height: 200px;
             padding-bottom: 20px;
+            @media only screen and (max-width: 700px) {
+              max-width: 100%;
+              height: auto;
+            }
           }
         }
         p {
@@ -332,7 +387,7 @@ section:last-child {
         }
       }
     }//end of inspiration
-  }
+  } //end of pad-box
 } //end of intro
 
 #concept-video {
@@ -363,13 +418,13 @@ section:last-child {
         height: auto;
       }
     }
-  }
+  }//end of pad-box
 } //end of concept video
 
-//branding-research
+//tech-research
 #tech-research {
   height: auto;
-  background-color: $bg-color;
+  background-color: $bg-color3;
   color: $light-bg;
   .pad-box {
     margin: 0 auto;
@@ -413,19 +468,26 @@ section:last-child {
         }
       }
     }
-  }
+  }//end of kirlian
   #guy {
-    border-bottom: 1px solid $light-bg;
+    // border-bottom: 1px solid $light-bg;
     color: $light-bg;
     .pad-box {
       margin: 0 auto;
       padding:50px;
       // background-color: $pur;
+      // @media only screen and (max-width: 500px) {
+      //   width: 100%;
+      //   position: absolute;
+      // }
       img {
         width: 400px;
         padding: 30px 0 0 0;
         display: block;
         margin: 0 auto;
+        @media only screen and (max-width: 500px) {
+          width: 100%;
+        }
       }
       h3 {
         font-family: $font-family-2;
@@ -437,12 +499,12 @@ section:last-child {
         font-family: $font-family-3;
       }
     }
-  }
-  //end of tech research
+  } //end of guy
+}//end of tech research
 
   #wearable {
     height: auto;
-    background-color: $bg-color;
+    background-color: $bg-color2;
     color: $light-bg;
     .pad-box {
       margin: 0 auto;
@@ -465,13 +527,15 @@ section:last-child {
       .pad-box {
         margin: 0 auto;
         padding: 50px;
-        img {
-          width: 400px;
-          display: block;
-          margin: 0 auto;
-          @media only screen and (max-width: 500px) {
-            width: 100%;
-            height: auto;
+        a {
+          img {
+            width: 400px;
+            display: block;
+            margin: 0 auto;
+            @media only screen and (max-width: 500px) {
+              width: 100%;
+              height: auto;
+            }
           }
         }
         h3 {
@@ -481,24 +545,30 @@ section:last-child {
         }
         p {
           font-family: $font-family-3;
+          padding-top: 10px;
           span  {
             font-weight: 600;
           }
         }
       }
-    }
+    } //end of sketches
     #prototype {
-      border-bottom: 1px solid $light-bg;
+      // border-bottom: 1px solid $light-bg;
       color: $light-bg;
       .pad-box {
         margin: 0 auto;
         padding:50px;
         // background-color: $pur;
-        img {
-          width: 400px;
-          padding: 30px 0 0 0;
-          display: block;
-          margin: 0 auto;
+        a {
+          img {
+            width: 400px;
+            padding: 30px 0 0 0;
+            display: block;
+            margin: 0 auto;
+            @media only screen and (max-width: 500px) {
+              width: 100%;
+            }
+          }
         }
         h3 {
           font-family: $font-family-2;
@@ -510,182 +580,143 @@ section:last-child {
           font-family: $font-family-3;
         }
       }
-    }
-  }
-    //end of wearable
-  #process {
-    border-bottom: 1px solid $bg-color;
-    padding: 30px 50px;
-    min-height: 380px;
-    @media only screen and (max-width: 500px) {
-      padding: 2em !important;
-    }
-      h3 {
-        font-family: $font-family-2;
+    } //end ofprototype
+  }//end of wearable
+
+  #user-research {
+    height: auto;
+    background-color: $bg-color3;
+    color: $light-bg;
+    .pad-box {
+      margin: 0 auto;
+      padding: 50px;
+      // @media only screen and (max-width: 500px) {
+      //   padding: $gutter;
+      // }
+      h2 {
+        padding-bottom: 20px;
+        font-family: $font-family-1;
+        text-transform: uppercase;
         font-weight: bolder;
         // color: $bg-color;
+        border-bottom: 2px solid $light-bg;
       }
-      .img-wrapper {
-        margin: 0 auto;
-        padding:20px 0;
-        a {
-          img {
-            height: 100px;
-            padding: 5px 5px 5px 0;
-            display: inline-block;
-          }
-        }
-      }
-      p {
-        font-style: italic;
-        padding-top: 10px;
-        font-family: $font-family-3;
-      }
-  }
-  #initial-designs {
-    border-bottom: 1px solid $bg-color;
-    padding: 30px 50px;
-    min-height: 400px;
-    @media only screen and (max-width: 500px) {
-      padding: 2em !important;
-    }
-      h3 {
-        font-family: $font-family-2;
-        font-weight: bolder;
-      }
-      .img-wrapper {
-        margin: 0 auto;
-        padding:20px 0;
-        a {
-          img {
-            // height: 100px;
-            padding: 5px 5px 5px 0;
-            display: inline-block;
-          }
-          .img-long {
-            width: 250px;
-          }
-          .img-sq {
-            height: 100px;
-          }
-        }
-      }
-      p {
-        font-style: italic;
-        padding-top: 10px;
-        font-family: $font-family-3;
-      }
-  }
-  #final-logo-bg {
-    border-bottom: 1px solid $bg-color;
-    padding: 30px 50px;
-    min-height: 500px;
-    @media only screen and (max-width: 500px) {
-      padding: 2em !important;
-    }
-      h3 {
-        font-family: $font-family-2;
-        font-weight: bolder;
-      }
-
-  }
-  #logo-lockups {
-    border-bottom: 1px solid $bg-color;
-    padding: 30px 50px;
-    min-height: 500px;
-    @media only screen and (max-width: 500px) {
-      padding: 2em !important;
-    }
-      h3 {
-        font-family: $font-family-2;
-        font-weight: bolder;
-      }
-      p {
-        font-style: italic;
-        font-family: $font-family-3;
-        padding: 15px 0;
-      }
-      .img-wrapper {
-        margin: 0 auto;
-        padding:10px 0;
-        a {
-          img {
-            // height: 100px;
-            padding: 5px 5px 5px 0;
-            display: inline-block;
-          }
-          .img-long {
-            width: 250px;
-          }
-          .img-sq {
-            height: 150px;
-          }
-        }
-      }
-      p {
-        font-style: italic;
-        font-family: $font-family-3;
-        padding-bottom: 15px;
-      }
-  }
-  #type-color {
-    border-bottom: 1px solid $bg-color;
-    padding: 30px 50px;
-    min-height: 500px;
-    @media only screen and (max-width: 500px) {
-      padding: 2em !important;
-    }
-      h3 {
-        font-family: $font-family-2;
-        font-weight: bolder;
-        padding-bottom: 20px;
-      }
-      img {
-        background-color: #fff;
-        width: 500px;
-        padding: 20px;
+      #survey-a {
+        height: 570px;
+        border-bottom: 1px solid $light-bg;
         @media only screen and (max-width: 500px) {
-          width: 100%;
+          height: 470px;
         }
-      }
-  }
-  #mockups {
-    padding: 30px 50px;
-    @media only screen and (max-width: 500px) {
-      padding: 2em !important;
-    }
-    h3 {
-      font-family: $font-family-2;
-      font-weight: bolder;
-    }
-    .img-wrapper {
-      margin: 0 auto;
-      padding:20px 0;
-      a {
-        display: inline-block;
-        img {
-          width: 250px;
-          padding: 5px 5px 25px 0;
-          display: inline-block;
+          .pad-box {
+            margin: 0 auto;
+            padding: 50px;
+            h3 {
+              font-family: $font-family-2;
+              font-weight: bolder;
+              padding: 20px 0;
+            }
+            a {
+              img {
+                width: 500px;
+                padding: 5px 5px 5px 0;
+                @media only screen and (max-width: 500px) {
+                  width: 100%;
+                }
+              }
+            }
+          }
+      }//end of survey
+      #target-market {
+        height: 600px;
+        color: $light-bg;
+        border-bottom: 1px solid $light-bg;
+        @media only screen and (max-width: 500px) {
+          height: 800px;
         }
-      }
-      p {
-        font-size: 1.1em;
-        font-style: italic;
-        // padding: 25px 0;
-        font-family: $font-family-3;
-        // display: inline;
-      }
-    }
-  }
-}
-//end of branding-research
+        .pad-box {
+          margin: 0 auto;
+          padding: 50px;
+          h3 {
+            font-family: $font-family-2;
+            font-weight: bolder;
+            padding: 20px 0;
+          }
+          p {
+            font-family: $font-family-3;
+            span  {
+              font-weight: 600;
+              color: $brand-color;
+            }
+          }
+        }
+      }//end of target-market
+      #persona {
+        height: 780px;
+        color: $light-bg;
+        border-bottom: 1px solid $light-bg;
+        .pad-box {
+          margin: 0 auto;
+          padding: 50px;
+          a {
+            img {
+              padding: 5px 5px 25px 0;
+              width: 100%;
+              opacity: 0.6;
+            }
+          }
+          h3 {
+            font-family: $font-family-2;
+            font-weight: bolder;
+            padding: 20px 0;
+          }
+          p {
+            font-family: $font-family-3;
+            span  {
+              font-weight: 600;
+              color: $brand-color;
+            }
+          }
+        }
+      }//end of persona
+      #user-test {
+        height: 710px;
+        color: $light-bg;
+        // border-bottom: 1px solid $light-bg;
+        @media only screen and (max-width: 500px) {
+          height: 650px;
+        }
+        .pad-box {
+          margin: 0 auto;
+          padding: 50px;
+          a {
+            img {
+              padding: 5px 5px 25px 0;
+              width: 100%;
+              opacity: 0.6;
+            }
+          }
+          h3 {
+            font-family: $font-family-2;
+            font-weight: bolder;
+            padding: 20px 0;
+          }
+          p {
+            font-family: $font-family-3;
+            span  {
+              font-weight: 600;
+              color: $brand-color;
+            }
+          }
+        }
+      }//end of user-testing
+  } //end of pad-box
+}//end of user-research
 
-//web design research
-#web-design {
+//task flows
+#task-flows  {
   height: auto;
   background-color: $bg-color2;
-  color:$brand-color3 ;
+  color:$light-bg ;
   .pad-box {
     margin: 0 auto;
     padding: 50px;
@@ -697,146 +728,155 @@ section:last-child {
       // color: $bg-color;
       border-bottom: 2px solid $brand-color3;
     }
-    #evolution {
-      border-bottom: 1px solid $brand-color3;
-      h3 {
-        font-family: $font-family-2;
-        font-weight: bolder;
-        padding-top: 25px;
-        @media only screen and (max-width: 500px) {
-          padding: 1em 0 0 1.2em !important;
+    .img-wrapper {
+      margin: 0 auto;
+      padding:10px 0 30px 0;
+      a {
+        display: inline-block;
+        img {
+          // max-width: 100%;
+          width: 200px;
+          padding: 5px 5px 5px 0;
+          // display: inline-block;
         }
       }
-      .img-wrapper {
-        margin: 0 auto;
-        padding:10px 0 30px 0;
-        @media only screen and (max-width: 500px) {
-          padding: 2em !important;
-          max-width: 100%;
-        }
-        a {
-          display: inline-block;
-          img {
-            width: 180px;
-            padding: 5px 5px 5px 0;
-            // display: inline-block;
-          }
-        }
-        p {
-          width: 600px;
-          padding: 15px 0;
-          font-family: $font-family-3;
-          // display: inline;
-          @media only screen and (max-width: 500px) {
-            width: 100%;
-            padding:0;
-          }
-        }
-      }
+    } //end of img-wrapper
+    p {
+      font-style: italic;
     }
+  } //end of pad-box
+}//end of task flows
 
-    #inspiration2 {
-      border-bottom: 1px solid $brand-color3;
-      h3 {
-        font-family: $font-family-2;
-        font-weight: bolder;
-        padding-top: 25px;
-        @media only screen and (max-width: 500px) {
-          padding: 1em 0 0 1.2em !important;
-        }
-      }
-      .img-wrapper {
-        margin: 0 auto;
-        padding:10px 0 30px 0;
-        @media only screen and (max-width: 500px) {
-          padding: 2em !important;
-          max-width: 100%;
-        }
-        a {
-          display: inline-block;
-          img {
-            width: 250px;
-            padding: 5px 5px 5px 0;
-            // display: inline-block;
-          }
-        }
-        p {
-          width: 600px;
-          padding: 15px 0;
-          font-family: $font-family-3;
-          // display: inline;
-          @media only screen and (max-width: 500px) {
-            width: 100%;
-            padding:0;
-          }
-        }
-      }
+//ia
+#ia {
+  height: auto;
+  background-color: $bg-color3;
+  color:$light-bg ;
+  .pad-box {
+    margin: 0 auto;
+    padding: 50px;
+    h2 {
+      padding-bottom: 20px;
+      font-family: $font-family-1;
+      text-transform: uppercase;
+      font-weight: bolder;
+      // color: $bg-color;
+      border-bottom: 2px solid $brand-color3;
     }
+    .img-wrapper {
+      margin: 0 auto;
+      padding:30px 0;
+      a {
+        display: inline-block;
+        img {
+          // max-width: 100%;
+          width: 100%;
+          padding: 5px 5px 5px 0;
+          // display: inline-block;
+        }
+      }
+    } //end of img-wrapper
+    p {
+      font-style: italic;
+    }
+  } //end of pad-box
+}//end of ia
 
-    #ia {
-      border-bottom: 1px solid $brand-color3;
-      h3 {
-        font-family: $font-family-2;
-        font-weight: bolder;
-        padding-top: 25px;
+//design-evo
+#design-evo {
+  height: auto;
+  background-color: $bg-color2;
+  color:$light-bg ;
+  .pad-box {
+    margin: 0 auto;
+    padding: 50px;
+    h2 {
+      padding-bottom: 20px;
+      font-family: $font-family-1;
+      text-transform: uppercase;
+      font-weight: bolder;
+      // color: $bg-color;
+      border-bottom: 2px solid $brand-color3;
+    }
+    .img-wrapper {
+      margin: 0 auto;
+      padding:10px 0 30px 0;
+      @media only screen and (max-width: 500px) {
+        padding: 2em !important;
+        max-width: 100%;
       }
-      .img-wrapper {
-        margin: 0 auto;
-        padding:10px 0 30px 0;
-        a {
-          display: inline-block;
-          img {
-            max-width: 100%;
-            width: 650px;
-            padding: 15px 5px 5px 0;
-            // display: inline-block;
-          }
+      a {
+        display: inline-block;
+        img {
+          width: 100%;
+          padding: 5px 5px 5px 0;
+          // display: inline-block;
+        }
+      }
+      p {
+        width: 600px;
+        padding: 15px 0;
+        font-family: $font-family-3;
+        // display: inline;
+        @media only screen and (max-width: 500px) {
+          width: 100%;
+          padding:0;
         }
       }
     }
+  }
+}//end of design-evo
 
-    #wireframes {
-      border-bottom: 1px solid $brand-color3;
-      h3 {
-        font-family: $font-family-2;
-        font-weight: bolder;
-        padding-top: 25px;
-      }
-      .img-wrapper {
-        margin: 0 auto;
-        padding:10px 0 30px 0;
-        a {
-          display: inline-block;
-          img {
-            max-width: 100%;
-            width: 650px;
-            padding: 5px 5px 5px 0;
-            // display: inline-block;
-          }
+//screens
+#screens {
+  height: auto;
+  background-color: $bg-color2;
+  color:$light-bg ;
+  .pad-box {
+    margin: 0 auto;
+    padding: 50px;
+    h2 {
+      padding-bottom: 20px;
+      font-family: $font-family-1;
+      text-transform: uppercase;
+      font-weight: bolder;
+      // color: $bg-color;
+      border-bottom: 2px solid $brand-color3;
+    }
+    .img-wrapper {
+      margin: 0 auto;
+      padding:10px 0 30px 0;
+      a {
+        img {
+          // max-width: 100%;
+          width: 100%;
+          padding: 5px 5px 5px 0;
         }
       }
     }
-    #high-fid {
-      // border-bottom: 1px solid $brand-color3;
-      min-height: 600px;
-      h3 {
-        font-family: $font-family-2;
-        font-weight: bolder;
-        padding-top: 25px;
-      }
-      .img-wrapper {
-        margin: 0 auto;
-        padding:10px 0 30px 0;
-          display: inline-block;
-          img {
-            max-width: 100%;
-            width: 650px;
-            padding: 5px 5px 5px 0;
-          }
-      }
+  }
+}//end of screens
+
+//mockup
+#mockup {
+  height: auto;
+  background-color: $bg-color3;
+  color:$light-bg ;
+  .pad-box {
+    margin: 0 auto;
+    padding: 50px;
+    h2 {
+      padding-bottom: 20px;
+      font-family: $font-family-1;
+      text-transform: uppercase;
+      font-weight: bolder;
+      // color: $bg-color;
+      border-bottom: 2px solid $brand-color3;
     }
-  }//end of pad box
-}//end of web design research
+  }
+}//end of mockup
+
+
 
 //thank-you
 .application {
@@ -863,6 +903,5 @@ section:last-child {
       text-decoration: none;
       border-bottom: 2px solid $brand-color2;
     }
-
   }
 }
