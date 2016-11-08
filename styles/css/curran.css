@@ -85,6 +85,11 @@ body {
 .content-area {
   margin: 50px 150px;
 }
+@media only screen and (max-width: 600px) {
+  .content-area {
+    margin: 1.5em;
+  }
+}
 .content-area section {
   color: #1d1d21;
   border-bottom: 2px solid #1d1d21;
@@ -123,6 +128,12 @@ body {
   padding: 0 20px 20px 0;
   float: left;
 }
+@media only screen and (max-width: 600px) {
+  .content-area section .img-wrapper img {
+    float: none;
+    width: 100%;
+  }
+}
 .content-area section h4 {
   padding: 30px 0 0 0;
   font-family: "Work Sans", sans-serif;
@@ -132,6 +143,11 @@ body {
 }
 .content-area #my-role {
   height: 1100px;
+}
+@media only screen and (max-width: 600px) {
+  .content-area #my-role {
+    height: 1600px;
+  }
 }
 .content-area #invite {
   min-height: 100px;
