@@ -118,15 +118,15 @@ html, body {
       span {
         font-size: $font-head*2;
         font-family: $font-family-2;
-        color: $brand-color;
+        color: $bg-color;
         padding-top: 20px;
       }
       a {
         font-size: 0.3em;
         text-transform: uppercase;
         font-family: $font-family-1;
-        color: $brand-color !important;
-        border-bottom: 1px solid $brand-color;
+        color: $bg-color !important;
+        border-bottom: 1px solid $bg-color;
         padding-top: 30px;
       }
     }
@@ -241,6 +241,9 @@ html, body {
         @media only screen and (max-width: 500px) {
           padding: $gutter;
         }
+        h4 {
+          line-height: 1.8;
+        }
       }
     }
   }// end of about-content
@@ -282,6 +285,31 @@ html, body {
         @media only screen and (max-width: 500px) {
           padding: $gutter;
         }
+        a {
+          color: $light-bg;
+          // &:hover {
+          //   border-bottom: 1px solid $light-bg;
+          // }
+        }
+        // .fa-linkedin-square, .fa-instagram-square,
+        // .fa-dribble-square, .fa-behance-square {
+        // .fa {
+        //   color: $light-bg;
+        //   font-size: 3em;
+        //   padding: 0.4em 0.5em 0.4em 0;
+        // }
+        i.fa {
+          font-size: 4em;
+          color: $brand-color;
+          padding: 0.2em 0.5em 0.4em 0;
+        }
+        h4 {
+          line-height: 1.8;
+          padding-bottom: 20px;
+        }
+        h1 {
+          padding-bottom: 20px;
+        }
       }
     }
   }// end of contact-content
@@ -318,6 +346,7 @@ a {
   float: none;
 }
 .section-title {
+
   text-align: center;
   display: flex;
   justify-content: center;
@@ -362,7 +391,7 @@ a {
   .text-box {
     position: absolute;
     padding: 40px 50px;
-    background-color: #fff;
+    background-color:$bg-color;
     color: $brand-color;
     h4 {
       font-family: $font-family-2;

@@ -107,15 +107,15 @@ html, body {
 .content-wrapper .work-content .work-section-title span {
   font-size: 4em;
   font-family: "bellotaregular", sans-serif;
-  color: #ed9f80;
+  color: #1d1d21;
   padding-top: 20px;
 }
 .content-wrapper .work-content .work-section-title a {
   font-size: 0.3em;
   text-transform: uppercase;
   font-family: "adamnormal", sans-serif;
-  color: #ed9f80 !important;
-  border-bottom: 1px solid #ed9f80;
+  color: #1d1d21 !important;
+  border-bottom: 1px solid #1d1d21;
   padding-top: 30px;
 }
 .content-wrapper .work-content .work-section-content {
@@ -242,6 +242,9 @@ html, body {
     padding: 1.5em;
   }
 }
+.content-wrapper .about-content .about-section-content .about-text-wrapper h4 {
+  line-height: 1.8;
+}
 .content-wrapper .contact-content {
   position: relative;
 }
@@ -287,6 +290,21 @@ html, body {
   .content-wrapper .contact-content .contact-section-content .contact-text-wrapper {
     padding: 1.5em;
   }
+}
+.content-wrapper .contact-content .contact-section-content .contact-text-wrapper a {
+  color: #E8CFC5;
+}
+.content-wrapper .contact-content .contact-section-content .contact-text-wrapper i.fa {
+  font-size: 4em;
+  color: #ed9f80;
+  padding: 0.2em 0.5em 0.4em 0;
+}
+.content-wrapper .contact-content .contact-section-content .contact-text-wrapper h4 {
+  line-height: 1.8;
+  padding-bottom: 20px;
+}
+.content-wrapper .contact-content .contact-section-content .contact-text-wrapper h1 {
+  padding-bottom: 20px;
 }
 .content-wrapper .ty-section {
   height: 650px;
@@ -365,7 +383,7 @@ a:hover {
 .see-project .text-box {
   position: absolute;
   padding: 40px 50px;
-  background-color: #fff;
+  background-color: #1d1d21;
   color: #ed9f80;
 }
 .see-project .text-box h4 {
